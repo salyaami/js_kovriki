@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      @font-face {
+        font-family: GraphikLCG;
+        src: url("fonts/GraphikLCG-Medium.otf");
+      }
+    </style>
+
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/bg.png">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( ".straw" ).draggable();
+      } );
+      $(function() {
+      	$(".lemon").draggable();
+      });
+      $(function() {
+      	$(".apple").draggable();
+      });
+      $(function() {
+        $(".listik").draggable();
+      });
+      $(function() {
+        $(".black").draggable();
+      });
+      $(function() {
+        $(".brocco").draggable();
+      });
+      $(function() {
+        $(".fish").draggable();
+      });
+      $(function() {
+        $(".mush").draggable();
+      });
+      $(function() {
+        $(".goroh").draggable();
+      });
+
+
+    </script>
+  </head>
+  <body>
+    <div class="back">
+      <img src="img/bg-peretask.png" alt="">
+    </div>
+
+    <div class="glitchi">
+      <img src="img/verh.png" alt="">
+      <img src="img/niz.png" alt="">
+    </div>
+
+    <div id="plashka"></div>
+    <div class="name">
+      <p>собери</p>
+      <h5>свой уникальный</h5>
+      <p>ковер</p>
+    </div>
+
+
+    <div id="rectangle"></div>
+    <div class="polki">
+      <img src="img/polka.png" alt="">
+      <img src="img/polka.png" alt="">
+      <img src="img/polka.png" alt="">
+      <img src="img/polka.png" alt="">
+      <img src="img/polka.png" alt="">
+      <img src="img/polka.png" alt="">
+    </div>
+
+    <!-- 4 клубнички -->
+
+    <div class="straw">
+      <img src="img/straw.png" alt="">
+    </div>
+    <div class="straw">
+      <img src="img/straw.png" alt="">
+    </div>
+    <div class="straw">
+      <img src="img/straw.png" alt="">
+    </div>
+    <div class="straw">
+      <img src="img/straw.png" alt="">
+    </div>
+
+    <!-- 4 лимона -->
+
+
+    <div class="lemon">
+      <img src="img/lemon.png" alt="">
+    </div>
+    <div class="lemon">
+      <img src="img/lemon.png" alt="">
+    </div>
+    <div class="lemon">
+      <img src="img/lemon.png" alt="">
+    </div>
+    <div class="lemon">
+      <img src="img/lemon.png" alt="">
+    </div>
+
+    <!-- 4 яблока -->
+
+    <div class="apple">
+      <img src="img/apple.png" alt="">
+    </div>
+    <div class="apple">
+      <img src="img/apple.png" alt="">
+    </div>
+    <div class="apple">
+      <img src="img/apple.png" alt="">
+    </div>
+    <div class="apple">
+      <img src="img/apple.png" alt="">
+    </div>
+
+    <!-- 4 листика -->
+
+
+    <div class="listik">
+      <img src="img/list.png" alt="">
+    </div>
+    <div class="listik">
+      <img src="img/list.png" alt="">
+    </div>
+    <div class="listik">
+      <img src="img/list.png" alt="">
+    </div>
+    <div class="listik">
+      <img src="img/list.png" alt="">
+    </div>
+
+
+    <!-- 4 голубики -->
+
+
+    <div class="black">
+      <img src="img/black.png" alt="">
+    </div>
+    <div class="black">
+      <img src="img/black.png" alt="">
+    </div>
+    <div class="black">
+      <img src="img/black.png" alt="">
+    </div>
+    <div class="black">
+      <img src="img/black.png" alt="">
+    </div>
+
+    <!-- 4 брокколины -->
+
+
+    <div class="brocco">
+      <img src="img/brocco.png" alt="">
+    </div>
+    <div class="brocco">
+      <img src="img/brocco.png" alt="">
+    </div>
+    <div class="brocco">
+      <img src="img/brocco.png" alt="">
+    </div>
+    <div class="brocco">
+      <img src="img/brocco.png" alt="">
+    </div>
+
+    <!-- 4 рыбы -->
+
+
+    <div class="fish">
+      <img src="img/fish.png" alt="">
+    </div>
+    <div class="fish">
+      <img src="img/fish.png" alt="">
+    </div>
+    <div class="fish">
+      <img src="img/fish.png" alt="">
+    </div>
+    <div class="fish">
+      <img src="img/fish.png" alt="">
+    </div>
+
+    <!-- 4 гриба -->
+
+
+    <div class="mush">
+      <img src="img/mush.png" alt="">
+    </div>
+    <div class="mush">
+      <img src="img/mush.png" alt="">
+    </div>
+    <div class="mush">
+      <img src="img/mush.png" alt="">
+    </div>
+    <div class="mush">
+      <img src="img/mush.png" alt="">
+    </div>
+
+    <!-- 4 гороха -->
+
+
+    <div class="goroh">
+      <img src="img/goroh.png" alt="">
+    </div>
+    <div class="goroh">
+      <img src="img/goroh.png" alt="">
+    </div>
+    <div class="goroh">
+      <img src="img/goroh.png" alt="">
+    </div>
+    <div class="goroh">
+      <img src="img/goroh.png" alt="">
+    </div>
+
+    <!-- 4 морковки -->
+
+
+    <div class="carrot">
+      <img src="img/carrot.png" alt="">
+    </div>
+    <div class="carrot">
+      <img src="img/carrot.png" alt="">
+    </div>
+    <div class="carrot">
+      <img src="img/carrot.png" alt="">
+    </div>
+    <div class="carrot">
+      <img src="img/carrot.png" alt="">
+    </div>
+
+    <div id="pink_knopka"></div>
+    <div id="blue_knopka"></div>
+    <div id="yellow_knopka"></div>
+
+    <div id="reverse_knopka">
+      <img src="img/reverse.png" alt="">
+    </div>
+
+    <div id="home">
+      <img src="img/home.png" alt="">
+    </div>
+
+    <div id="draggable"></div>
+
+  </body>
+</html>
