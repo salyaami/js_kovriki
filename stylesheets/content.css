@@ -1,0 +1,243 @@
+
+/* DRAG & DROP */
+
+body {
+  background-color: #7B5AFD;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.back {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  animation: anim1 17s infinite linear;
+}
+
+@keyframes anim1 {
+  0% {
+      transform: translateX(0vw);
+  }
+  100% {
+      transform: translateX(-200vw);
+  }
+}
+
+.glitchi img:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.glitchi img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#plashka {
+  position: absolute;
+  top: 7vh;
+  left: 14vw;
+  width: 72vh;
+  height: 7vh;
+  background: #F50BFF;
+}
+
+.name p:nth-child(1) {
+  font-family: GraphikLCG;
+  font-size: 2.3vw;
+  position: absolute;
+  top: 9vh;
+  left: 16vw;
+  color: #FFFFFF;
+}
+.name h5{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3vw;
+  position: absolute;
+  top: 8.5vh;
+  left: 25vw;
+  color: #FFFFFF;
+}
+.name p:nth-child(3) {
+  font-family: GraphikLCG;
+  font-size: 2.3vw;
+  position: absolute;
+  top: 9vh;
+  left: 44vw;
+  color: #FFFFFF;
+}
+
+#rectangle {
+  width: 61vw;
+  height: 63vh;
+  position: absolute;
+  top: 17vh;
+  left: 4.5vw;
+  background: #FEC708;
+}
+
+.polki {
+  display: grid;
+  grid-gap: 86px;
+  position: absolute;
+  top: 16vh;
+  left: 78vw;
+  width: 18vw;
+  object-fit: cover;
+}
+
+.straw {
+  position: absolute;
+  left: 77vw;
+  top: 2.5vw;
+  cursor: move;
+  position: absolute;
+}
+
+.lemon {
+  position: absolute;
+  left: 87vw;
+  top: 4vw;
+  cursor: move;
+  position: absolute;
+}
+
+.apple {
+  position: absolute;
+  left: 79vw;
+  top: 11.5vw;
+  cursor: move;
+  position: absolute;
+}
+
+.listik {
+  position: absolute;
+  left: 84vw;
+  top: 9.5vw;
+  cursor: move;
+}
+
+.black {
+  position: absolute;
+  left: 78vw;
+  top: 19vw;
+  cursor: move;
+}
+
+.brocco {
+  position: absolute;
+  left: 85vw;
+  top: 17vw;
+  cursor: move;
+}
+
+.fish {
+  position: absolute;
+  left: 77vw;
+  top: 27vw;
+  cursor: move;
+}
+.mush {
+  position: absolute;
+  left: 78vw;
+  top: 34vw;
+  cursor: move;
+}
+
+.goroh {
+  position: absolute;
+  left: 84vw;
+  top: 32vw;
+  cursor: move;
+}
+.carrot {
+  position: absolute;
+  left: 78vw;
+  top: 43vw;
+  cursor: move;
+}
+
+
+#pink_knopka {
+  background: #EC71D9;
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 18vw;
+  top: 84vh;
+  transform: rotate(45deg);
+}
+
+#blue_knopka {
+  background: #5FCFFA;
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 24vw;
+  top: 84vh;
+  transform: rotate(45deg);
+}
+
+#yellow_knopka {
+  background: #FEC708;
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 30vw;
+  top: 84vh;
+  transform: rotate(45deg);
+}
+
+#reverse_knopka {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  left: 38vw;
+  top: 82.6vh;
+}
+
+#home {
+  position: absolute;
+  left: 47vw;
+  top: 83vh;
+}
+
+
+
+/* DRAW */
+
+
+
+.orange img:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.orange img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#kover {
+  position: absolute;
+  top: 12vh;
+  display: block;
+  margin: auto;
+  width: 87vh;
+  height: 8vh;
+  background: #FFDFB9;
+}
+
+#symmetry {
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+}
