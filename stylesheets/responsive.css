@@ -1,0 +1,335 @@
+/* ноут 1280 который */
+
+/* игра перетаскивание */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .polki {
+    width: 18vw;
+    height: 3.5vh;
+  }
+  .poloki{
+    grid-gap: 10.5vh;
+  }
+  #plashka {top: 8vh;
+    width: 54vw;
+    left: 8vw;
+  }
+  .poloki{top: 17vh;
+  }
+  .straw {top: 6.5vh;
+  }
+  .lemon {top: 8.5vh;
+  }
+  .apple {top: 23.5vh;
+  }
+  .listik {top: 17.5vh;
+  }
+  .black {top: 37vh;
+  }
+  .brocco {top: 32vh;
+  }
+  .fish {top: 48vh;
+  }
+  .mush {top: 63vh;
+  }
+  .goroh {top: 58vh;
+  }
+  .carrot {top: 79vh;
+  }
+  .name p:nth-child(1) {
+    font-size: 3vw;
+    top: 9vh;
+    left: 11.5vw;
+  }
+  .name h5 {
+    font-size: 3vw;
+    top: 8.7vh;
+    left: 24vw;
+  }
+  .name p:nth-child(3) {
+    font-size: 3vw;
+    top: 9vh;
+    left: 49.5vw;
+  }
+}
+
+/* айпад */
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  /* изменения в перетаскивании */
+  .polki {
+    width: 23vw;
+    height: 3.2vh;
+  }
+  .poloki{
+    top: 16vh;
+    grid-gap: 10vh;
+    left: 74vw;
+  }
+  #plashka {
+    top: 8vh;
+    width: 66vw;
+    height: 8vh;
+    left: 3vw;
+  }
+  .poloki{top: 17vh;
+  }
+  .straw {
+    top: 6.5vh;
+    width: 13vw;
+    height: 13vw;
+    left: 73vw;
+  }
+  .lemon {top: 8.5vh;
+    width: 9vw;
+    height: 9vw;
+  }
+  .apple {
+    top: 20.5vh;
+    width: 9vw;
+    height: 9.5vw;
+    left: 76vw;
+  }
+  .listik {
+    top: 18.5vh;
+    width: 14vw;
+    height: 12vw;
+    left: 85vw;
+  }
+  .black {
+    top: 35vh;
+    width: 11vw;
+    height: 11vw;
+    left: 75vw;
+  }
+  .brocco {
+    top: 32vh;
+    width: 14vw;
+    height: 14vw;
+  }
+  .fish {
+    top: 48vh;
+    width: 25vw;
+    height: 12vw;
+    left: 72vw;
+  }
+  .mush {top: 63vh;
+    width: 9vw;
+    height: 9vw;
+    left: 75vw;
+  }
+  .goroh {top: 58vh;
+    width: 16vw;
+    height: 12vw;
+    left: 83vw;
+  }
+  .carrot {
+    top: 76vh;
+    width: 23vw;
+    height: 9vw;
+    left: 76vw;
+  }
+  .name p:nth-child(1) {
+    font-size: 4vw;
+    top: 9vh;
+    left: 4.5vw;
+  }
+  .name h5 {
+    font-size: 4vw;
+    top: 8.7vh;
+    left: 21vw;
+  }
+  .name p:nth-child(3) {
+    font-size: 4vw;
+    top: 9vh;
+    left: 55.5vw;
+  }
+  #pink_knopka {
+    width: 5vw;
+    height: 5vw;
+    left: 13vw;
+  }
+  #blue_knopka {
+    width: 5vw;
+    height: 5vw;
+    left: 22vw;
+  }
+  #yellow_knopka {
+    width: 5vw;
+    height: 5vw;
+    left: 31vw;
+  }
+  #home {
+    width: 15vw;
+    height: 6vw;
+  }
+
+  /* изменения в трэке */
+
+  /* плашка */
+  .plashka2{
+    left: 22vw;
+    width: 56vw;
+    height: 6vw;
+  }
+  /* шрифты */
+  .name_3 p:nth-child(1) {
+    font-size: 4vw;
+    left: 25.5vw;
+    top: 8vh;
+  }
+  .name_3 h5 {
+    font-size: 4vw;
+    left: 44vw;
+    top: 8vh;
+  }
+  .name_3 p:nth-child(3) {
+    font-size: 4vw;
+    left: 62.5vw;
+    top: 8vh;
+  }
+}
+
+/* мобилки */
+@media screen and (min-width: 340px) and (max-width: 650px) {
+
+  /* изменения в трэке */
+  .plashka2{
+    left: 18vw;
+    width: 64vw;
+    height: 8vw;
+    top: 8vh;
+  }
+  .name_3 p:nth-child(1) {
+    font-size: 5vw;
+    left: 20.5vw;
+  }
+  .name_3 h5 {
+    font-size: 5vw;
+    left: 43vw;
+    top: 8.7vh;
+  }
+  .name_3 p:nth-child(3) {
+    font-size: 5vw;
+    left: 65.5vw;
+  }
+
+  /* изменения в перетаскивании */
+  .polki {
+    width: 32vw;
+    height: 3vh;
+  }
+  .poloki{
+    top: 19vh;
+    grid-gap: 10vh;
+    left: 67vw;
+  }
+  .rectangle {
+    left: 3vw;
+    width: 60vw;
+  }
+  #plashka {
+    top: 8vh;
+    width: 66vw;
+    height: 5vh;
+    left: 3vw;
+  }
+  .straw {
+    top: 11.5vh;
+    width: 17vw;
+    height: 17vw;
+    left: 67vw;
+  }
+  .lemon {
+    top: 12.5vh;
+    width: 12vw;
+    height: 12vw;
+    left: 85vw;
+  }
+  .apple {
+    top: 24.5vh;
+    width: 12vw;
+    height: 12.5vw;
+    left: 71vw;
+  }
+  .listik {
+    top: 23.5vh;
+    width: 18vw;
+    height: 15vw;
+    left: 82vw;
+  }
+  .black {
+    top: 38vh;
+    width: 15vw;
+    height: 15vw;
+    left: 70vw;
+  }
+  .brocco {
+    top: 37vh;
+    width: 18vw;
+    height: 18vw;
+    left: 82vw;
+  }
+  .fish {
+    top: 49vh;
+    width: 34vw;
+    height: 15vw;
+    left: 66vw;
+  }
+  .mush {
+    top: 62vh;
+    width: 13vw;
+    height: 13vw;
+    left: 68vw;
+  }
+  .goroh {
+    top: 60vh;
+    width: 20vw;
+    height: 15vw;
+    left: 78vw;
+  }
+  .carrot {
+    top: 76vh;
+    width: 32vw;
+    height: 13vw;
+    left: 68vw;
+  }
+  .name p:nth-child(1) {
+    font-size: 4vw;
+    top: 9vh;
+    left: 4.5vw;
+  }
+  .name h5 {
+    font-size: 4vw;
+    top: 8.7vh;
+    left: 21vw;
+  }
+  .name p:nth-child(3) {
+    font-size: 4vw;
+    top: 9vh;
+    left: 55.5vw;
+  }
+  #pink_knopka {
+    width: 7vw;
+    height: 7vw;
+    left: 7vw;
+    border: 3px solid #FFF;
+  }
+  #blue_knopka {
+    width: 7vw;
+    height: 7vw;
+    left: 19vw;
+    border: 3px solid #FFF;
+  }
+  #yellow_knopka {
+    width: 7vw;
+    height: 7vw;
+    left: 31vw;
+    border: 3px solid #FFF;
+  }
+  #home {
+    width: 19vw;
+    height: 8vw;
+    left: 44vw;
+  }
+
+
+}

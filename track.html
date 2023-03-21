@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>аа</title>
+    <style media="screen">
+      @font-face {
+        font-family: GraphikLCG;
+        src: url("fonts/GraphikLCG-Medium.otf");
+      }
+    </style>
+
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/bg.png">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        let arr = ['img/apple.png', 'img/lemon.png', 'img/list.png', 'img/black.png',
+        'img/brocco.png', 'img/carrot.png', 'img/fish.png',
+      'img/mush.png', 'img/straw.png'];
+
+      let arr_small = ['img/apple2.png', 'img/lemon2.png', 'img/list2.png', 'img/black2.png',
+      'img/brocco2.png', 'img/carrot2.png', 'img/fish2.png',
+    'img/mush2.png', 'img/straw2.png'];
+
+        let rand;
+        $(document).mousemove(function(e) {
+          if ($(window).width() <= 767) {
+            rand = Math.floor(Math.random() * arr_small.length);
+          } else {
+            rand = Math.floor(Math.random() * arr.length);
+          }
+
+         let img = $("<img>").attr("src", arr[rand]).css({
+          "left": e.pageX + "px",
+          "top": e.pageY + "px",
+          "position": "absolute"
+        }).appendTo(".rectangle_3").fadeOut(7000);
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+
+  <div class="back">
+    <img src="img/bg_track.png" alt="">
+  </div>
+
+  <div class="verh_track">
+    <img src="img/verh_track.png" alt="">
+  </div>
+
+  <div class="niz_track">
+    <img src="img/niz_track.png" alt="">
+  </div>
+
+  <div class="plashka2"></div>
+
+  <div class="name_3">
+    <p>заполни</p>
+    <h5>едой весь</h5>
+    <p>ковер</p>
+  </div>
+
+  <div class="rectangle_3"></div>
+
+  <div class="home_track"></div>
+
+  </body>
+</html>

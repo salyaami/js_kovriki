@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>аа</title>
     <style media="screen">
       @font-face {
         font-family: GraphikLCG;
@@ -18,238 +18,60 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-      $( function() {
-        $( ".straw" ).draggable();
-      } );
-      $(function() {
-      	$(".lemon").draggable();
-      });
-      $(function() {
-      	$(".apple").draggable();
-      });
-      $(function() {
-        $(".listik").draggable();
-      });
-      $(function() {
-        $(".black").draggable();
-      });
-      $(function() {
-        $(".brocco").draggable();
-      });
-      $(function() {
-        $(".fish").draggable();
-      });
-      $(function() {
-        $(".mush").draggable();
-      });
-      $(function() {
-        $(".goroh").draggable();
-      });
 
-
+    <script type="text/javascript">
+      $(document).ready(function(){
+      });
     </script>
   </head>
   <body>
+
+
+    <!-- <div class="nain">
+      <img src="img/main.png" alt="">
+    </div> -->
+
     <div class="back">
       <img src="img/bg-peretask.png" alt="">
     </div>
 
     <div class="glitchi">
-      <img src="img/verh.png" alt="">
-      <img src="img/niz.png" alt="">
+      <img src="img/verh_glavniy.png" alt="">
+      <img src="img/niz_glavniy.png" alt="">
     </div>
 
-    <div id="plashka"></div>
-    <div class="name">
-      <p>собери</p>
-      <h5>свой уникальный</h5>
-      <p>ковер</p>
-    </div>
+    <div class="products">
+
+      <div class="item1">
+        <img src="img/item1.png" alt="">
+      </div>
+      <div class="ticket1">
+        <img src="img/ticket1.png" alt="">
+      </div>
 
 
-    <div id="rectangle"></div>
-    <div class="polki">
-      <img src="img/polka.png" alt="">
-      <img src="img/polka.png" alt="">
-      <img src="img/polka.png" alt="">
-      <img src="img/polka.png" alt="">
-      <img src="img/polka.png" alt="">
-      <img src="img/polka.png" alt="">
-    </div>
+      <div class="item2">
+        <img src="img/item2.png" alt="">
+      </div>
+      <div class="ticket2">
+        <img src="img/ticket2.png" alt="">
+      </div>
 
-    <!-- 4 клубнички -->
+      <div class="item3">
+        <img src="img/item3.png" alt="">
+      </div>
+      <div class="ticket3">
+        <img src="img/ticket3.png" alt="">
+      </div>
 
-    <div class="straw">
-      <img src="img/straw.png" alt="">
-    </div>
-    <div class="straw">
-      <img src="img/straw.png" alt="">
-    </div>
-    <div class="straw">
-      <img src="img/straw.png" alt="">
-    </div>
-    <div class="straw">
-      <img src="img/straw.png" alt="">
-    </div>
+      <div class="item4">
+        <img src="img/item4.png" alt="">
+      </div>
+      <div class="ticket4">
+        <img src="img/ticket4.png" alt="">
+      </div>
 
-    <!-- 4 лимона -->
-
-
-    <div class="lemon">
-      <img src="img/lemon.png" alt="">
-    </div>
-    <div class="lemon">
-      <img src="img/lemon.png" alt="">
-    </div>
-    <div class="lemon">
-      <img src="img/lemon.png" alt="">
-    </div>
-    <div class="lemon">
-      <img src="img/lemon.png" alt="">
-    </div>
-
-    <!-- 4 яблока -->
-
-    <div class="apple">
-      <img src="img/apple.png" alt="">
-    </div>
-    <div class="apple">
-      <img src="img/apple.png" alt="">
-    </div>
-    <div class="apple">
-      <img src="img/apple.png" alt="">
-    </div>
-    <div class="apple">
-      <img src="img/apple.png" alt="">
-    </div>
-
-    <!-- 4 листика -->
-
-
-    <div class="listik">
-      <img src="img/list.png" alt="">
-    </div>
-    <div class="listik">
-      <img src="img/list.png" alt="">
-    </div>
-    <div class="listik">
-      <img src="img/list.png" alt="">
-    </div>
-    <div class="listik">
-      <img src="img/list.png" alt="">
-    </div>
-
-
-    <!-- 4 голубики -->
-
-
-    <div class="black">
-      <img src="img/black.png" alt="">
-    </div>
-    <div class="black">
-      <img src="img/black.png" alt="">
-    </div>
-    <div class="black">
-      <img src="img/black.png" alt="">
-    </div>
-    <div class="black">
-      <img src="img/black.png" alt="">
-    </div>
-
-    <!-- 4 брокколины -->
-
-
-    <div class="brocco">
-      <img src="img/brocco.png" alt="">
-    </div>
-    <div class="brocco">
-      <img src="img/brocco.png" alt="">
-    </div>
-    <div class="brocco">
-      <img src="img/brocco.png" alt="">
-    </div>
-    <div class="brocco">
-      <img src="img/brocco.png" alt="">
-    </div>
-
-    <!-- 4 рыбы -->
-
-
-    <div class="fish">
-      <img src="img/fish.png" alt="">
-    </div>
-    <div class="fish">
-      <img src="img/fish.png" alt="">
-    </div>
-    <div class="fish">
-      <img src="img/fish.png" alt="">
-    </div>
-    <div class="fish">
-      <img src="img/fish.png" alt="">
-    </div>
-
-    <!-- 4 гриба -->
-
-
-    <div class="mush">
-      <img src="img/mush.png" alt="">
-    </div>
-    <div class="mush">
-      <img src="img/mush.png" alt="">
-    </div>
-    <div class="mush">
-      <img src="img/mush.png" alt="">
-    </div>
-    <div class="mush">
-      <img src="img/mush.png" alt="">
-    </div>
-
-    <!-- 4 гороха -->
-
-
-    <div class="goroh">
-      <img src="img/goroh.png" alt="">
-    </div>
-    <div class="goroh">
-      <img src="img/goroh.png" alt="">
-    </div>
-    <div class="goroh">
-      <img src="img/goroh.png" alt="">
-    </div>
-    <div class="goroh">
-      <img src="img/goroh.png" alt="">
-    </div>
-
-    <!-- 4 морковки -->
-
-
-    <div class="carrot">
-      <img src="img/carrot.png" alt="">
-    </div>
-    <div class="carrot">
-      <img src="img/carrot.png" alt="">
-    </div>
-    <div class="carrot">
-      <img src="img/carrot.png" alt="">
-    </div>
-    <div class="carrot">
-      <img src="img/carrot.png" alt="">
-    </div>
-
-    <div id="pink_knopka"></div>
-    <div id="blue_knopka"></div>
-    <div id="yellow_knopka"></div>
-
-    <div id="reverse_knopka">
-      <img src="img/reverse.png" alt="">
-    </div>
-
-    <div id="home">
-      <img src="img/home.png" alt="">
-    </div>
-
-    <div id="draggable"></div>
+  </div>
 
   </body>
 </html>
