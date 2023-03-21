@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>аа</title>
+    <title>посидим поедим</title>
     <style media="screen">
       @font-face {
         font-family: GraphikLCG;
@@ -11,6 +11,7 @@
     </style>
 
     <link href="stylesheets/style.css" rel="stylesheet">
+
     <link rel="icon" type="image/x-icon" href="img/bg.png">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 
@@ -18,60 +19,291 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/draganddrop.js"></script>
+    <script src="js/draw.js"></script>
+    <script src="js/track.js"></script>
+
 
     <script type="text/javascript">
       $(document).ready(function(){
+        // главный экран, переходы в миры по нажатию
+
+        $(".item1").click(function() {
+          $(".screen_3").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_1").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+
+        $(".item2").click(function() {
+          $(".screen_2").css("display", "block")
+          $(".screen_1").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+
+        $(".item3").click(function() {
+          $(".screen_4").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_1").css("display", "none")
+        });
+
+        // кнопки возвращения на главный экран
+
+        $("#home_knopka").click(function() {
+          $(".screen_1").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+        $("#home").click(function() {
+          $(".screen_1").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+        $("#home_track").click(function() {
+          $(".screen_1").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+
       });
     </script>
   </head>
   <body>
+    <!-- главный экран -->
+    <div class="screen_1">
+      <div class="back">
+        <img src="img/bg-peretask.png" alt="">
+      </div>
 
+      <div class="glitchi">
+        <img src="img/verh_glavniy.png" alt="">
+        <img src="img/niz_glavniy.png" alt="">
+      </div>
 
-    <!-- <div class="nain">
-      <img src="img/main.png" alt="">
-    </div> -->
+      <div class="products">
 
-    <div class="back">
-      <img src="img/bg-peretask.png" alt="">
+        <div class="item1">
+          <img src="img/item1.png" alt="">
+        </div>
+        <div class="ticket1">
+          <img src="img/ticket1.png" alt="">
+        </div>
+
+        <div class="item2">
+          <img src="img/item2.png" alt="">
+        </div>
+        <div class="ticket2">
+          <img src="img/ticket2.png" alt="">
+        </div>
+
+        <div class="item3">
+          <img src="img/item3.png" alt="">
+        </div>
+        <div class="ticket3">
+          <img src="img/ticket3.png" alt="">
+        </div>
+
+        <div class="item4">
+          <img src="img/item4.png" alt="">
+        </div>
+        <div class="ticket4">
+          <img src="img/ticket4.png" alt="">
+        </div>
+      </div>
     </div>
 
-    <div class="glitchi">
-      <img src="img/verh_glavniy.png" alt="">
-      <img src="img/niz_glavniy.png" alt="">
+
+    <!-- игра перетаскивание экран -->
+    <div class="screen_2">
+      <div class="back">
+        <img src="img/bg-peretask.png" alt="">
+      </div>
+
+      <div class="glitchi">
+        <img src="img/verh.png" alt="">
+        <img src="img/niz.png" alt="">
+      </div>
+
+      <div id="plashka"></div>
+      <div class="name">
+        <p>собери</p>
+        <h5>свой уникальный</h5>
+        <p>ковер</p>
+      </div>
+
+      <div class="pink"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+
+      <div class="rectangle"></div>
+
+      <!-- 6 полок -->
+      <div class="poloki">
+        <div class="polki"></div>
+        <div class="polki"></div>
+        <div class="polki"></div>
+        <div class="polki"></div>
+        <div class="polki"></div>
+        <div class="polki"></div>
+      </div>
+
+      <!-- 4 клубнички -->
+
+      <div class="straw"></div>
+      <div class="straw"></div>
+      <div class="straw"></div>
+      <div class="straw"></div>
+
+      <!-- 4 лимона -->
+
+
+      <div class="lemon"></div>
+      <div class="lemon"></div>
+      <div class="lemon"></div>
+      <div class="lemon"></div>
+
+
+      <!-- 4 яблока -->
+
+      <div class="apple"></div>
+      <div class="apple"></div>
+      <div class="apple"></div>
+      <div class="apple"></div>
+
+
+      <!-- 4 листика -->
+
+
+      <div class="listik"></div>
+      <div class="listik"></div>
+      <div class="listik"></div>
+      <div class="listik"></div>
+
+
+
+      <!-- 4 голубики -->
+
+
+      <div class="black"></div>
+      <div class="black"></div>
+      <div class="black"></div>
+      <div class="black"></div>
+
+
+      <!-- 4 брокколины -->
+
+
+      <div class="brocco"></div>
+      <div class="brocco"></div>
+      <div class="brocco"></div>
+      <div class="brocco"></div>
+
+
+      <!-- 4 рыбы -->
+
+
+      <div class="fish"></div>
+      <div class="fish"></div>
+      <div class="fish"></div>
+      <div class="fish"></div>
+
+
+
+      <!-- 4 гриба -->
+
+
+      <div class="mush"></div>
+      <div class="mush"></div>
+      <div class="mush"></div>
+      <div class="mush"></div>
+
+
+      <!-- 4 гороха -->
+
+
+      <div class="goroh"></div>
+      <div class="goroh"></div>
+      <div class="goroh"></div>
+      <div class="goroh"></div>
+
+
+      <!-- 4 морковки -->
+
+
+      <div class="carrot"></div>
+      <div class="carrot"></div>
+      <div class="carrot"></div>
+      <div class="carrot"></div>
+
+
+      <div id="pink_knopka"></div>
+      <div id="blue_knopka"></div>
+      <div id="yellow_knopka"></div>
+
+
+      <div id="home"></div>
     </div>
 
-    <div class="products">
-
-      <div class="item1">
-        <img src="img/item1.png" alt="">
-      </div>
-      <div class="ticket1">
-        <img src="img/ticket1.png" alt="">
+    <!-- игра рисовашка экран -->
+    <div class="screen_3">
+      <div class="back">
+        <img src="img/bg_2.png" alt="">
       </div>
 
-
-      <div class="item2">
-        <img src="img/item2.png" alt="">
-      </div>
-      <div class="ticket2">
-        <img src="img/ticket2.png" alt="">
+      <div class="glitchi">
+        <img src="img/gli_orange_niz.png">
+        <img src="img/gli_orange_verh.png">
       </div>
 
-      <div class="item3">
-        <img src="img/item3.png" alt="">
-      </div>
-      <div class="ticket3">
-        <img src="img/ticket3.png" alt="">
-      </div>
-
-      <div class="item4">
-        <img src="img/item4.png" alt="">
-      </div>
-      <div class="ticket4">
-        <img src="img/ticket4.png" alt="">
+      <div id="kover"></div>
+      <div class="name_2">
+        <p>нарисуй</p>
+        <h5>свой уникальный</h5>
+        <p>ковер</p>
       </div>
 
-  </div>
+      <div id="sin_knopka"></div>
+      <div id="black_knopka"></div>
+      <div id="viol_knopka"></div>
+
+      <div id="revers_knopka"></div>
+
+      <canvas id="canvas" width="800px" height="800px" ></canvas>
+
+      <div id="home_knopka"></div>
+    </div>
+
+    <!-- игра следы едой экран -->
+    <div class="screen_4">
+      <div class="back">
+        <img src="img/bg_track.png" alt="">
+      </div>
+
+      <div class="verh_track">
+        <img src="img/verh_track.png" alt="">
+      </div>
+
+      <div class="niz_track">
+        <img src="img/niz_track.png" alt="">
+      </div>
+
+      <div class="plashka2"></div>
+
+      <div class="name_3">
+        <p>заполни</p>
+        <h5>едой весь</h5>
+        <p>ковер</p>
+      </div>
+
+      <div class="rectangle_3"></div>
+
+      <div id="home_track"></div>
+    </div>
 
   </body>
 </html>

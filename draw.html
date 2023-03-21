@@ -29,17 +29,13 @@
           ctx.lineTo(e.offsetX, e.offsetY);
           ctx.stroke();
         }
-        ctx.strokeStyle = selectedColor;
+        ctx.strokeStyle = "blue";
         // $('#black_knopka').click(function() {
         //   ctx.strokeStyle = "black";
         // });
           ctx.lineWidth = 3;
         canvas.addEventListener("mousemove", drawing);
       });
-
-
-
-
 
       //
       // function drawLine(x1, y1, x2, y2) {
@@ -49,17 +45,15 @@
       //   ctx.stroke();
       // }
 
-      $("#viol_knopka").click(function() {
-        selectedColor = window.getComputedStyle(btn).getPropertyValue('background-color');
-        // btn????
-      });
+      // $("#viol_knopka").click(function() {
+      //   selectedColor = window.getComputedStyle(btn).getPropertyValue('background-color');
+      //   // btn????
+      // });
 
     </script>
   </head>
   <body>
-
-    <p>привет</p>
-
+    
     <div class="back">
       <img src="img/bg_2.png" alt="">
     </div>
@@ -82,7 +76,7 @@
 
     <div id="revers_knopka"></div>
 
-    <canvas id="canvas" width="600px" height="600px" ></canvas>
+    <canvas id="canvas" width="800px" height="800px" ></canvas>
 
     <div id="home_knopka"></div>
 
