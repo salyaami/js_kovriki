@@ -20,7 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/draganddrop.js"></script>
-    <script src="js/draw.js"></script>
+    <script src="js/ddraw.js"></script>
     <script src="js/track.js"></script>
 
 
@@ -33,6 +33,7 @@
           $(".screen_2").css("display", "none")
           $(".screen_1").css("display", "none")
           $(".screen_4").css("display", "none")
+          $(".screen_5").css("display", "none")
         });
 
         $(".item2").click(function() {
@@ -40,6 +41,7 @@
           $(".screen_1").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
+          $(".screen_5").css("display", "none")
         });
 
         $(".item3").click(function() {
@@ -47,6 +49,15 @@
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_1").css("display", "none")
+          $(".screen_5").css("display", "none")
+        });
+
+        $(".item4").click(function() {
+          $(".screen_5").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_1").css("display", "none")
+          $(".screen_4").css("display", "none")
         });
 
         // кнопки возвращения на главный экран
@@ -56,20 +67,30 @@
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
+          $(".screen_5").css("display", "none")
         });
         $("#home").click(function() {
           $(".screen_1").css("display", "block")
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
+          $(".screen_5").css("display", "none")
         });
         $("#home_track").click(function() {
           $(".screen_1").css("display", "block")
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
+          $(".screen_5").css("display", "none")
         });
 
+        $("#home_remember").click(function() {
+          $(".screen_1").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_4").css("display", "none")
+          $(".screen_5").css("display", "none")
+        });
       });
     </script>
   </head>
@@ -87,33 +108,17 @@
 
       <div class="products">
 
-        <div class="item1">
-          <img src="img/item1.png" alt="">
-        </div>
-        <div class="ticket1">
-          <img src="img/ticket1.png" alt="">
-        </div>
+        <div class="item1"></div>
+        <div class="ticket1"></div>
 
-        <div class="item2">
-          <img src="img/item2.png" alt="">
-        </div>
-        <div class="ticket2">
-          <img src="img/ticket2.png" alt="">
-        </div>
+        <div class="item2"></div>
+        <div class="ticket2"></div>
 
-        <div class="item3">
-          <img src="img/item3.png" alt="">
-        </div>
-        <div class="ticket3">
-          <img src="img/ticket3.png" alt="">
-        </div>
+        <div class="item3"></div>
+        <div class="ticket3"></div>
 
-        <div class="item4">
-          <img src="img/item4.png" alt="">
-        </div>
-        <div class="ticket4">
-          <img src="img/ticket4.png" alt="">
-        </div>
+        <div class="item4"></div>
+        <div class="ticket4"></div>
       </div>
     </div>
 
@@ -273,9 +278,11 @@
 
       <div id="revers_knopka"></div>
 
-      <canvas id="canvas" width="800px" height="800px" ></canvas>
+      <canvas id="drawCanvas"></canvas>
 
       <div id="home_knopka"></div>
+
+      <input type="button" value="Reset" id="reset">
     </div>
 
     <!-- игра следы едой экран -->
@@ -303,6 +310,44 @@
       <div class="rectangle_3"></div>
 
       <div id="home_track"></div>
+    </div>
+
+    <!-- игра-запоминайка -->
+    <div class="screen_5">
+      <div class="back">
+        <img src="img/remember_back.png" alt="">
+      </div>
+
+      <div class="verh_track">
+        <img src="img/remember_verh.png" alt="">
+      </div>
+
+      <div class="niz_track">
+        <img src="img/remember_niz.png" alt="">
+      </div>
+
+      <div class="cards">
+        <div class="card1"></div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card4"></div>
+        <div class="card5"></div>
+        <div class="card6"></div>
+        <div class="card7"></div>
+        <div class="card8"></div>
+        <div class="card9"></div>
+        <div class="card10"></div>
+        <div class="card11"></div>
+        <div class="card12"></div>
+        <div class="card13"></div>
+        <div class="card14"></div>
+        <div class="card15"></div>
+        <div class="card16"></div>
+        <div class="card17"></div>
+        <div class="card18"></div>
+      </div>
+
+      <div id="home_remember"></div>
     </div>
 
   </body>

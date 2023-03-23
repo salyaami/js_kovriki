@@ -12,11 +12,26 @@ body {
 }
 
 /* MAIN PAGE */
-
-.nain {
-  width: 100%;
-  opacity: .5;
+.screen_1 {
+  display: block;
 }
+
+.screen_2 {
+  display: none;
+}
+
+.screen_3 {
+  display: none;
+}
+
+.screen_4 {
+  display: none;
+}
+
+.screen_5 {
+  display: none;
+}
+
 
 /* мир 1 и этикетка */
 
@@ -45,12 +60,21 @@ body {
   position: absolute;
   top: 29vh;
   left: 2vw;
+  height: 21vw;
+  width: 16vw;
+  background-size: cover;
+  background-image: url("../img/item1.png");
 }
+
 .ticket1 {
   position: absolute;
+  width: 12vw;
+  height: 12vw;
   top: 20vh;
-  left: -8vw;
+  left: -6vw;
   animation: anim2 2s infinite linear;
+  background-size: cover;
+  background-image: url("../img/ticket1.png");
 }
 
 @keyframes anim2 {
@@ -70,14 +94,22 @@ body {
 
 .item2 {
   position: absolute;
-  top: 53vh;
+  top: 49vh;
   left: 31vw;
+  height: 17.5vw;
+  width: 21.8vw;
+  background-size: cover;
+  background-image: url("../img/item2.png");
 }
 .ticket2 {
   position: absolute;
-  top: 60vh;
-  left: 22vw;
+  top: 57vh;
+  left: 23vw;
   animation: anim2 2s infinite linear;
+  height: 13vw;
+  width: 11vw;
+  background-size: cover;
+  background-image: url("../img/ticket2.png");
 }
 
 /* мир 3 и этикетка */
@@ -85,13 +117,21 @@ body {
 .item3 {
   position: absolute;
   top: 21vh;
-  left: 61vw;
+  left: 57vw;
+  height: 19vw;
+  width: 32vw;
+  background-size: cover;
+  background-image: url("../img/item3.png");
 }
 .ticket3 {
   position: absolute;
   top: 21vh;
-  left: 93vw;
+  left: 86vw;
+  height: 8vw;
+  width: 11vw;
   animation: anim2 2s infinite linear;
+  background-size: cover;
+  background-image: url("../img/ticket3.png");
 }
 
 /* мир 4 и этикетка */
@@ -99,13 +139,21 @@ body {
 .item4 {
   position: absolute;
   top: 43vh;
-  left: 95vw;
+  left: 92vw;
+  height: 23vw;
+  width: 25vw;
+  background-size: cover;
+  background-image: url("../img/item4.png");
 }
 .ticket4 {
   position: absolute;
   top: 56vh;
   left: 81vw;
+  height: 12vw;
+  width: 13vw;
   animation: anim2 2s infinite linear;
+  background-size: cover;
+  background-image: url("../img/ticket4.png");
 }
 
 /* DRAG & DROP */
@@ -337,6 +385,7 @@ body {
   left: 18vw;
   top: 83vh;
   transform: rotate(45deg);
+  border: 3px solid #ffffff;
 }
 
 #blue_knopka {
@@ -347,6 +396,7 @@ body {
   left: 24vw;
   top: 83vh;
   transform: rotate(45deg);
+  border: 3px solid #ffffff;
 }
 
 #yellow_knopka {
@@ -357,6 +407,7 @@ body {
   left: 30vw;
   top: 83vh;
   transform: rotate(45deg);
+  border: 3px solid #ffffff;
 }
 
 #home {
@@ -405,11 +456,12 @@ body {
 #kover {
   position: absolute;
   top: 4vh;
-  display: flex;
   left: 28vw;
   width: 44vw;
   height: 8vh;
   background: #FFDFB9;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .name_2 p:nth-child(1) {
@@ -453,6 +505,7 @@ body {
   top: 30vh;
   transform: rotate(45deg);
   display: flex;
+  border: 3px solid #ffffff;
 }
 
 #black_knopka {
@@ -464,6 +517,7 @@ body {
   top: 43vh;
   transform: rotate(45deg);
   display: flex;
+  border: 3px solid #ffffff;
 }
 
 #viol_knopka {
@@ -475,6 +529,7 @@ body {
   top: 56vh;
   transform: rotate(45deg);
   display: flex;
+  border: 3px solid #ffffff;
 }
 
 #revers_knopka {
@@ -500,15 +555,21 @@ body {
   display: flex;
 }
 
-#canvas {
-  position: absolute;
+#drawCanvas {
+  /* position: absolute;
   top: 13vh;
   left: 31vw;
   height: 38vw;
-  width: 38vw;
-  background: #fff;
+  /* width: 38vw;
+  /* background: #fff;
   display: block;
-  margin: auto;
+  margin: auto; */
+  display: block;
+  position: absolute;
+  top: 13vh;
+  left: 25vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* TRACKING_GAME */
@@ -576,9 +637,14 @@ body {
   background: #B7E0FF;
   height: 73vh;
   width: 64vw;
+  overflow: hidden;
 }
 
-.home_track {
+.rectangle_3 img {
+  pointer-events: none;
+}
+
+#home_track {
   position: absolute;
   left: 3vw;
   top: 17vh;
@@ -587,7 +653,183 @@ body {
   background-image: url("../img/home_track.png");
   background-size: cover;
 }
-.home_track:hover, #home_knopka:hover, #sin_knopka:hover, #black_knopka:hover, #viol_knopka:hover {
+.home_track:hover, #home_knopka:hover, #sin_knopka:hover, #black_knopka:hover, #viol_knopka:hover, #home_track:hover, #home_remember:hover {
   box-shadow: 10px 16px 40px 0px #FFFFFFBD;
   transition: 0.5s;
+}
+/* экран с запоминанием карточек */
+#home_remember {
+  position: absolute;
+  left: 3vw;
+  top: 17vh;
+  width: 11vw;
+  height: 5vw;
+  background-image: url("../img/home.png");
+  background-size: cover;
+}
+
+.card1 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card2 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card3 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card4 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 33vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card5 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 44vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card6 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 55vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card7 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  top: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card8 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 11vw;
+  top: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card9 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 22vw;
+  top: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card10 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 33vw;
+  top: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card11 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 44vw;
+  top: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card12 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 55vw;
+  top: 11vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card13 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  top: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card14 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 11vw;
+  top: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card15 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 22vw;
+  top: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card16 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 33vw;
+  top: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card17 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 44vw;
+  top: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+.card18 {
+  width: 7vw;
+  height: 10vw;
+  position: absolute;
+  left: 55vw;
+  top: 22vw;
+  background-size: cover;
+  background-image: url("../img/card_oborot.png");
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: 200px auto 100px;
+  grid-template-rows: 200px auto 100px;
+  position: absolute;
+  top: 17vh;
+  left: 20vw;
+  height: 33vh;
+  width: 33vw;
 }

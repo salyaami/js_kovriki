@@ -50,10 +50,82 @@
     top: 9vh;
     left: 49.5vw;
   }
+  /* рисование игра */
+  /* #canvas {
+    top: 15vh;
+    left: 25vw;
+    height: 50vw;
+    width: 50vw;
+  } */
+  #home_knopka {
+    top: 15vh;
+  }
+  #sin_knopka {
+    left: 79vw;
+    top: 33vh;
+  }
+  #black_knopka {
+    left: 79vw;
+    top: 46vh;
+  }
+  #viol_knopka {
+    left: 79vw;
+    top: 59vh;
+  }
 }
 
 /* айпад */
 @media screen and (min-width: 651px) and (max-width: 1024px) {
+
+  .item1 {
+    top: 29vh;
+    left: 2vw;
+    height: 31.2vw;
+    width: 24vw;
+  }
+
+  .ticket1 {
+    width: 14vw;
+    height: 14vw;
+    top: 21vh;
+    left: -8vw;
+  }
+
+  .item2 {
+    height: 23.5vw;
+    width: 29.3vw;
+    top: 58vh;
+  }
+  .ticket2 {
+    top: 57vh;
+    left: 21vw;
+    height: 15vw;
+    width: 14vw;
+  }
+  .item3 {
+    top: 21vh;
+    left: 54vw;
+    height: 27vw;
+    width: 44vw;
+  }
+  .ticket3 {
+    top: 20vh;
+    left: 94vw;
+    height: 10vw;
+    width: 14vw;
+  }
+  .item4 {
+    height: 35vw;
+    width: 38vw;
+  }
+  .ticket4 {
+    top: 58vh;
+    left: 79vw;
+    height: 17vw;
+    width: 20vw;
+  }
+
+
   /* изменения в перетаскивании */
   .polki {
     width: 23vw;
@@ -185,6 +257,56 @@
     font-size: 4vw;
     left: 62.5vw;
     top: 8vh;
+  }
+  /* рисование игра */
+  /* #canvas {
+    top: 15vh;
+    left: 17vw;
+    height: 60vw;
+    width: 60vw;
+  } */
+  #kover{
+    left: 14vw;
+    width: 66vw;
+  }
+  #home_knopka {
+    top: 15vh;
+    left: 2vw;
+    width: 13vw;
+    height: 6vw;
+  }
+  #sin_knopka {
+    left: 83vw;
+    top: 33vh;
+    height: 5vw;
+    width: 5vw;
+  }
+  #black_knopka {
+    left: 83vw;
+    top: 46vh;
+    height: 5vw;
+    width: 5vw;
+  }
+  #viol_knopka {
+    left: 83vw;
+    top: 59vh;
+    height: 5vw;
+    width: 5vw;
+  }
+  .name_2 p:nth-child(1) {
+    font-size: 4vw;
+    left: 15vw;
+    top: 5vh;
+  }
+  .name_2 p:nth-child(3) {
+    font-size: 4vw;
+    top: 5vh;
+    left: 67vw;
+  }
+  .name_2 h5 {
+    top: 4.5vh;
+    left: 33vw;
+    font-size: 4vw;
   }
 }
 
@@ -330,6 +452,55 @@
     height: 8vw;
     left: 44vw;
   }
-
+  /* рисование игра */
+  /* #canvas {
+    top: 12vh;
+    left: 10vw;
+    height: 78vw;
+    width: 78vw;
+  } */
+  #kover{
+    left: 14vw;
+    width: 66vw;
+  }
+  #home_knopka {
+    top: 82vh;
+    left: 10vw;
+    width: 17vw;
+    height: 8vw;
+  }
+  #sin_knopka {
+    left: 57vw;
+    top: 83vh;
+    height: 6vw;
+    width: 6vw;
+  }
+  #black_knopka {
+    left: 69vw;
+    top: 83vh;
+    height: 6vw;
+    width: 6vw;
+  }
+  #viol_knopka {
+    left: 81vw;
+    top: 83vh;
+    height: 6vw;
+    width: 6vw;
+  }
+  .name_2 p:nth-child(1) {
+    font-size: 4vw;
+    left: 15vw;
+    top: 6vh;
+  }
+  .name_2 p:nth-child(3) {
+    font-size: 4vw;
+    top: 6vh;
+    left: 67vw;
+  }
+  .name_2 h5 {
+    top: 5.5vh;
+    left: 33vw;
+    font-size: 4vw;
+  }
 
 }
