@@ -10,14 +10,14 @@
       }
 
       @font-face {
-        font-family: Playfair;
+        font-family: Playfair Display;
         src: url('fonts/PlayfairDisplay-SemiBoldItalic.ttf');
       }
       p {
         font-family: GraphikLCG;
       }
       h5 {
-        font-family: 'Playfair Display', serif;
+        font-family: Playfair Display;
       }
     </style>
 
@@ -85,6 +85,12 @@
           $(".screen_1").css("display", "none")
         });
 
+        $("help").click(function() {
+          $(".screen_help").css("display", "block")
+        });
+        $("help_close").click(function() {
+          $(".screen_help").css("display", "none")
+        });
         // кнопки возвращения на главный экран
 
         $("#home_knopka").click(function() {
@@ -167,6 +173,16 @@
         <div class="item6"></div>
         <div class="ticket6"></div>
       </div>
+
+      <div class="help"></div>
+
+
+    </div>
+
+    <!-- экран с подсказками по кнопке помоць -->
+    <div class="screen_help">
+      <div class="help_rect"></div>
+      <div class="help_close"></div>
     </div>
 
     <!-- игра перетаскивание экран -->
