@@ -94,43 +94,60 @@
 //   }
 // })
 
+window.onload = function() {
+  console.log('loading');
+  cnv = document.getElementById("cnv");
+  cnv.style.backgroundColor = "#282A36";
+  prepareDocument()
+  resizeCanvas();
+  drawRect()
+}
+
+window.onresize = function() {
+  console.log('resizing');
+  resizeCanvas();
+  drawRect();
+}
+
+function resizeCanvas() {
+  cnv.width = window.innerWidth;
+  cnv.height = window.innerHeight;
+}
+
+
+
 let prevX, prevY, x1, y1;
+let cnv;
+
 
 $(document).ready(function() {
   let gameCanvas, gc, prevX, prevY;
   let selectedColor = "#AF00B8"
 
   let windowWidth = window.innerWidth
-  let ww = 300
 
   let canvas = document.getElementsByTagName('canvas')[0];
-  canvas.width  = 600;
-  canvas.height = 600;
-
-  // canvas.top = 10%;
-  // canvas.left = 10%;
+  // canvas.width  = 600;
+  // canvas.height = 600;
 
   if (windowWidth > 1440) {
     canvas.width = 800;
     canvas.height = 800;
-    ww = 800
   }
-  else if (windowWidth == 1440) {
-    canvas.width = 640
-    canvas.height = 640
-    ww = 640
+  else if (windowWidth === 1440) {
+    canvas.width = 640;
+    canvas.height = 640;
   }
-  else if (windowWidth >= 1280 && windowWidth < 1440) {
-    canvas.width = 600
-    canvas.height = 600
-    ww = 600
+  else if ((windowWidth >= 1280) && (windowWidth < 1440)) {
+    canvas.width = 600;
+    canvas.height = 600;
   }
 
   // if (windowWidth <= 800) {
   //   canvas.width = 300
   //   canvas.height = 300
   // }
-
+  //
   // let canvas_size = ceil(windowWidth * 0.48)
   // canvas.width = canvas_size
   // canvas.height = canvas_size
@@ -192,15 +209,15 @@ $(document).ready(function() {
   gc.stroke();
   }
 
-  //
-  // $(window).resize(() => {
-  //   console.log('resize');
-  //
-  //   windowWidth = window.innerWidth
-  //
-  //   if (windowWidth > 800) {
-  //     canvas.width = 300
-  //     canvas.height = 300
-  //   }
-  // })
+
+  $(window).resize(() => {
+    console.log('resize');
+
+    windowWidth = window.innerWidth
+
+    if (windowWidth > 400) {
+      canvas.width = 300
+      canvas.height = 300
+    }
+  })
 })

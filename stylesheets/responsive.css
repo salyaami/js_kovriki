@@ -1,23 +1,4 @@
 /* @media screen and (min-width: 1420px) and (max-width: 1920px) {
-  /* .glitchi_main {
-    height: 5vw;
-  }
-  .glitchi_main2 {
-    height: 5vw;
-  }
-
-  .glitchi_draw {
-    height: 5vw;
-  }
-  .glitchi_draw2 {
-    height: 5vw;
-  }
-
-  .glitchi_drag {
-    height: 5vw;
-  }
-  .glitchi_drag2 {
-    height: 5vw;
 
 } */
 
@@ -104,43 +85,80 @@
 /* айпад */
 @media screen and (min-width: 651px) and (max-width: 1024px) {
 
+  /* главный экран */
+
+
   .item1 {
-    top: 29vh;
+    top: 17vh;
     left: 2vw;
-    height: 42.2vw;
-    width: 32vw;
+    height: 26vw;
+    width: 22vw;
   }
-
   .ticket1 {
-    width: 24vw;
-    height: 21vw;
-    top: 21vh;
-    left: -13vw;
+    width: 17vw;
+    height: 16vw;
+    top: 11vh;
+    left: -11vw;
   }
-
   .item2 {
-    height: 30.5vw;
-    width: 38.3vw;
+    height: 24.5vw;
+    width: 32vw;
     top: 58vh;
-    left: 41vw;
+    left: 14vw;
   }
   .ticket2 {
-    top: 64vh;
-    left: 27vw;
-    height: 25vw;
-    width: 21vw;
+    top: 61vh;
+    left: 5vw;
+    height: 18vw;
+    width: 16vw;
   }
   .item3 {
-    top: 21vh;
-    left: 53vw;
-    height: 33vw;
-    width: 50vw;
+    top: 11vh;
+    left: 32vw;
+    height: 24vw;
+    width: 40vw;
   }
   .ticket3 {
-    top: 20vh;
-    left: 100vw;
-    height: 16vw;
-    width: 22vw;
+    top: 13vh;
+    left: 68vw;
+    height: 10vw;
+    width: 13vw;
+  }
+  .item4 {
+    top: 65vh;
+    left: 55vw;
+    height: 21.8vw;
+    width: 24.5vw;
+  }
+  .ticket4 {
+    top: 73vh;
+    left: 45vw;
+    height: 21vw;
+    width: 19vw;
+  }
+  .item5 {
+    top: 28vh;
+    left: 69vw;
+    height: 21vw;
+    width: 24vw;
+  }
+  .ticket5 {
+    top: 22vh;
+    left: 87vw;
+    height: 15vw;
+    width: 18vw;
+  }
+  .item6 {
+    top: 60vh;
+    left: 91vw;
+    height: 24vw;
+    width: 32vw;
+  }
+  .ticket6 {
+    top: 52vh;
+    left: 80vw;
+    height: 15vw;
+    width: 16vw;
   }
 
 
@@ -233,18 +251,18 @@
     left: 55.5vw;
   }
   #pink_knopka {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     left: 13vw;
   }
   #blue_knopka {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     left: 22vw;
   }
   #yellow_knopka {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     left: 31vw;
   }
   #home {
@@ -276,13 +294,21 @@
     left: 62.5vw;
     top: 8vh;
   }
+  .rectangle_3 {
+    top: 16vh;
+    height: 76vh;
+  }
+  #home_track {
+    position: absolute;
+    left: 3vw;
+    top: 7vh;
+    width: 17vw;
+    height: 8vw;
+  }
+
+
   /* рисование игра */
-  /* #canvas {
-    top: 15vh;
-    left: 17vw;
-    height: 60vw;
-    width: 60vw;
-  } */
+
   #kover{
     left: 14vw;
     width: 66vw;
@@ -331,50 +357,100 @@
 /* мобилки */
 @media screen and (min-width: 340px) and (max-width: 650px) {
 
+  /* изменения полей */
+
+  .glitchi_main {
+    height: 10vw;
+  }
+  .glitchi_main2 {
+    height: 10vw;
+  }
+
+  .glitchi_draw {
+    height: 5vw;
+  }
+  .glitchi_draw2 {
+    height: 5vw;
+  }
+
+  .glitchi_drag {
+    height: 5vw;
+  }
+  .glitchi_drag2 {
+    height: 5vw;
+  }
+
   .item1 {
-    top: 29vh;
+    top: 17vh;
     left: 2vw;
-    height: 54.2vw;
-    width: 41vw;
+    height: 37vw;
+    width: 31.5vw;
   }
   .ticket1 {
-    width: 29vw;
-    height: 27vw;
-    top: 25vh;
-    left: -16vw;
+    width: 24vw;
+    height: 22vw;
+    top: 11vh;
+    left: -15vw;
   }
   .item2 {
-    height: 39.5vw;
-    width: 49.3vw;
-    top: 70vh;
+    height: 31.5vw;
+    width: 41vw;
+    top: 65vh;
+    left: 8vw;
   }
   .ticket2 {
-    top: 73vh;
-    left: 12vw;
-    height: 31vw;
-    width: 28vw;
+    top: 67vh;
+    left: -7vw;
+    height: 25vw;
+    width: 23vw;
   }
   .item3 {
-    top: 13vh;
-    left: 54vw;
-    height: 40vw;
-    width: 59vw;
+    top: 11vh;
+    left: 38vw;
+    height: 29vw;
+    width: 48vw;
   }
   .ticket3 {
-    top: 11vh;
-    left: 107vw;
-    height: 22vw;
-    width: 29vw;
+    top: 13vh;
+    left: 81vw;
+    height: 14vw;
+    width: 18vw;
   }
   .item4 {
-    height: 72.4vw;
-    width: 79vw;
+    top: 37vh;
+    left: 42vw;
+    height: 28.8vw;
+    width: 32.5vw;
   }
   .ticket4 {
-    top: 55vh;
-    left: 73vw;
-    height: 26vw;
-    width: 34vw;
+    top: 44vh;
+    left: 28vw;
+    height: 27vw;
+    width: 28vw;
+  }
+  .item5 {
+    top: 73vh;
+    left: 55vw;
+    height: 27vw;
+    width: 32vw;
+  }
+  .ticket5 {
+    top: 67vh;
+    left: 78vw;
+    height: 21vw;
+    width: 23vw;
+  }
+  .item6 {
+    top: 42vh;
+    left: 91vw;
+    height: 28vw;
+    width: 39vw;
+  }
+  .ticket6 {
+    top: 33vh;
+    left: 74vw;
+    height: 21vw;
+    width: 27vw;
   }
 
   /* изменения в трэке */
@@ -397,6 +473,20 @@
     font-size: 5vw;
     left: 65.5vw;
   }
+  .rectangle_3 {
+    top: 16vh;
+    left: 9vw;
+    height: 69vh;
+    width: 82vw;
+  }
+  #home_track {
+    position: absolute;
+    left: 38vw;
+    top: 86vh;
+    width: 24vw;
+    height: 10vw;
+  }
+
 
   /* изменения в перетаскивании */
   .polki {
@@ -494,20 +584,20 @@
     left: 55.5vw;
   }
   #pink_knopka {
-    width: 7vw;
-    height: 7vw;
+    width: 5.5vw;
+    height: 5.5vw;
     left: 7vw;
     border: 3px solid #FFF;
   }
   #blue_knopka {
-    width: 7vw;
-    height: 7vw;
+    width: 5.5vw;
+    height: 5.5vw;
     left: 19vw;
     border: 3px solid #FFF;
   }
   #yellow_knopka {
-    width: 7vw;
-    height: 7vw;
+    width: 5.5vw;
+    height: 5.5vw;
     left: 31vw;
     border: 3px solid #FFF;
   }

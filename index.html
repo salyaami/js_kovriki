@@ -19,7 +19,6 @@
       h5 {
         font-family: 'Playfair Display', serif;
       }
-
     </style>
 
 
@@ -65,6 +64,27 @@
           $(".screen_1").css("display", "none")
         });
 
+        $(".item4").click(function() {
+          $(".screen_3").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_1").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+
+        $(".item5").click(function() {
+          $(".screen_2").css("display", "block")
+          $(".screen_1").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_4").css("display", "none")
+        });
+
+        $(".item6").click(function() {
+          $(".screen_4").css("display", "block")
+          $(".screen_2").css("display", "none")
+          $(".screen_3").css("display", "none")
+          $(".screen_1").css("display", "none")
+        });
+
         // кнопки возвращения на главный экран
 
         $("#home_knopka").click(function() {
@@ -104,10 +124,21 @@
         $("#black_knopka").click(function() {
           selectedColor = "#000000";
         });
+
+        $(".item1").hover(function(){
+          $(".cursor").addClass("cursorLabelClickAndMove");
+        },function(){
+          $(".cursorLabel").removeClass("cursorLabelClickAndMove");
+        });
       });
     </script>
   </head>
   <body>
+
+    <div class="cursor"></div>
+    <div class="cursorLabel"></div>
+    <div id="cur_2" class="cur">1</div>
+
     <!-- главный экран -->
     <div class="screen_1">
       <div class="back_1"></div>
@@ -126,6 +157,15 @@
 
         <div class="item3"></div>
         <div class="ticket3"></div>
+
+        <div class="item4"></div>
+        <div class="ticket4"></div>
+
+        <div class="item5"></div>
+        <div class="ticket5"></div>
+
+        <div class="item6"></div>
+        <div class="ticket6"></div>
       </div>
     </div>
 
@@ -135,7 +175,6 @@
 
       <div class="glitchi_drag"></div>
       <div class="glitchi_drag2"></div>
-
 
       <div id="plashka"></div>
       <div class="name">
