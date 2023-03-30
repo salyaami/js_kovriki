@@ -22,7 +22,7 @@ $(document).ready(function() {
   //   // ctx.lineTo(e.clientX - canvasLeft, e.clientY - canvasTop);
   //   ctx.stroke();
   // }
-    ctx.strokeStyle = "blue";
+    ctx.strokeStyle = "#AF00B8";
   // $('#black_knopka').click(function() {
   //   ctx.strokeStyle = "black";
   // });
@@ -34,7 +34,7 @@ $(document).ready(function() {
     let y = e.offsetY;
 
     console.log(e);
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "#AF00B8";
     ctx.lineWidth = 4;
     if(e.buttons == 1) {
       drawLine(prevX, prevY, x, y);

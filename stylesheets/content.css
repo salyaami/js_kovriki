@@ -1,39 +1,56 @@
-
-
-
 body {
   background-color: #7B5AFD;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+  display: block;
   cursor: url("../img/straw.png"), auto;
 }
+
 
 /* MAIN PAGE */
 .screen_1 {
   display: block;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .screen_2 {
   display: none;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .screen_3 {
   display: none;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .screen_4 {
   display: none;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-.screen_5 {
-  display: none;
+.back_1 {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  animation: anim1 14s infinite linear;
+  background-image: url("../img/bg-peretask.png");
+  background-size: cover;
 }
-
-
-/* мир 1 и этикетка */
 
 .products {
   position: absolute;
@@ -54,6 +71,26 @@ body {
   51%{transform: translateX(-100%); opacity: 0;}
   52%{transform: translateX(100%); opacity: 0;}
   53%{transform: translateX(100%); opacity: 1;}
+}
+
+.glitchi_main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 10vw;
+  background-size: cover;
+  background-image: url("../img/verh_glavniy.png");
+}
+
+.glitchi_main2 {
+  position: absolute;
+  left: 0;
+  bottom: 0vw;
+  width: 100vw;
+  height: 10vw;
+  background-size: cover;
+  background-image: url("../img/niz_glavniy.png");
 }
 
 .item1 {
@@ -158,12 +195,15 @@ body {
 
 /* DRAG & DROP */
 
-.back {
+.back_2 {
   display: flex;
   width: 300vw;
   height: 100vh;
-  animation: anim1 17s infinite linear;
+  animation: anim1 14s infinite linear;
+  background-image: url("../img/bg-peretask.png");
+  background-size: cover;
 }
+
 
 @keyframes anim1 {
   0% {
@@ -174,19 +214,27 @@ body {
   }
 }
 .products {
-  animation: products-move 5s infinite linear;
+  animation: products-move 7s infinite linear;
 }
 
-.glitchi img:nth-child(1) {
+.glitchi_drag {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100vw;
+  height: 6vw;
+  background-size: cover;
+  background-image: url("../img/verh.png");
 }
 
-.glitchi img:nth-child(2) {
+.glitchi_drag2 {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0vw;
+  width: 100vw;
+  height: 6vw;
+  background-size: cover;
+  background-image: url("../img/niz.png");
 }
 
 #plashka {
@@ -441,17 +489,35 @@ body {
 /* DRAW */
 
 
-.orange img:nth-child(1) {
+.glitchi_draw {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100vw;
+  height: 6vw;
+  background-size: cover;
+  background-image: url("../img/gli_orange_verh.png");
 }
 
-.orange img:nth-child(2) {
+.glitchi_draw2 {
   position: absolute;
   left: 0;
-  bottom: -2vh;
+  bottom: 0vw;
+  width: 100vw;
+  height: 6vw;
+  background-size: cover;
+  background-image: url("../img/gli_orange_niz.png");
 }
+
+.back_3 {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  animation: anim1 14s infinite linear;
+  background-image: url("../img/bg_2.png");
+  background-size: cover;
+}
+
 
 #kover {
   position: absolute;
@@ -532,16 +598,6 @@ body {
   border: 3px solid #ffffff;
 }
 
-#revers_knopka {
-  position: absolute;
-  width: 6vw;
-  height: 6vw;
-  left: 74.6vw;
-  top: 67.6vh;
-  z-index: 2;
-  background-image: url("..img/reverse.png");
-  background-size: cover;
-}
 
 #home_knopka {
   position: absolute;
@@ -561,34 +617,46 @@ body {
   left: 31vw;
   height: 38vw;
   /* width: 38vw;
-  /* background: #fff;
+
   display: block;
   margin: auto; */
   display: block;
   position: absolute;
   top: 13vh;
-  left: 25vw;
+  left: 29vw;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* TRACKING_GAME */
 
-.bac {
-  width: 100%;
-  opacity: .5;
+.back_4 {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  animation: anim1 14s infinite linear;
+  background-image: url("../img/bg_track.png");
+  background-size: cover;
 }
 
 .verh_track {
   position: absolute;
   left: 0;
   top: 0;
+  width: 100vw;
+  height: 6vw;
+  background-image: url("../img/verh_track.png");
+  background-size: cover;
 }
 
 .niz_track {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0vw;
+  width: 100vw;
+  height: 6vw;
+  background-image: url("../img/niz_track.png");
+  background-size: cover;
 }
 
 .plashka2 {
@@ -656,180 +724,4 @@ body {
 .home_track:hover, #home_knopka:hover, #sin_knopka:hover, #black_knopka:hover, #viol_knopka:hover, #home_track:hover, #home_remember:hover {
   box-shadow: 10px 16px 40px 0px #FFFFFFBD;
   transition: 0.5s;
-}
-/* экран с запоминанием карточек */
-#home_remember {
-  position: absolute;
-  left: 3vw;
-  top: 17vh;
-  width: 11vw;
-  height: 5vw;
-  background-image: url("../img/home.png");
-  background-size: cover;
-}
-
-.card1 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card2 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card3 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card4 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 33vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card5 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 44vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card6 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 55vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card7 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  top: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card8 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 11vw;
-  top: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card9 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 22vw;
-  top: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card10 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 33vw;
-  top: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card11 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 44vw;
-  top: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card12 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 55vw;
-  top: 11vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card13 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  top: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card14 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 11vw;
-  top: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card15 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 22vw;
-  top: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card16 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 33vw;
-  top: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card17 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 44vw;
-  top: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-.card18 {
-  width: 7vw;
-  height: 10vw;
-  position: absolute;
-  left: 55vw;
-  top: 22vw;
-  background-size: cover;
-  background-image: url("../img/card_oborot.png");
-}
-
-.cards {
-  display: grid;
-  grid-gap: 1vw;
-  grid-template-columns: 200px auto 100px;
-  grid-template-rows: 200px auto 100px;
-  position: absolute;
-  top: 17vh;
-  left: 20vw;
-  height: 33vh;
-  width: 33vw;
 }

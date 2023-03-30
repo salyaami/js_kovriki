@@ -1,95 +1,206 @@
-let gameCanvas, gc, prevX, prevY;
-let selectedColor = "#000";
-
-addEventListener("load", load);
-
-let windowWidth = window.innerWidth
+// let gameCanvas, gc, prevX, prevY;
+// let selectedColor = "#000";
 //
-// if (windowWidth > 1200) {
-canvas.width = 800
-canvas.height = 800
-
-let windowWidth = window.innerWidth
-
-if (windowWidth > 800) {
-  canvas.width = 800
-  canvas.height = 800
-}
+// addEventListener("load", load);
+//
+// let windowWidth = window.innerWidth
+// //
+// // if (windowWidth > 1200) {
+// canvas.width = 800
+// canvas.height = 800
+//
+// let windowWidth = window.innerWidth
+//
+// if (windowWidth > 800) {
+//   canvas.width = 800
+//   canvas.height = 800
 // }
-
+// // }
+//
+// // $(window).resize(() => {
+// //   console.log('resize');
+// //
+// //   windowWidth = window.innerWidth
+// //
+// //   if (windowWidth < 800) {
+// //     canvas.width = 600
+// //     canvas.height = 600
+// //   }
+//
+//
+// function load(e) {
+// document.getElementById("reset").addEventListener("click", load);
+//
+// gameCanvas = document.getElementById("drawCanvas");
+// gc = gameCanvas.getContext("2d");
+//
+// gameCanvas.addEventListener("mousemove", draw);
+//
+// gc.fillStyle = "white";
+// gc.fillRect(0, 0, 600, 600);
+// }
+//
+// sin_knopka.onclick = function() {
+//   selectedColor = "#2400FF";
+// }
+//
+// document.querySelector("#sin_knopka").onclick = function() {
+//   selectedColor = "#2400FF";
+// }
+// document.querySelector("#viol_knopka").onclick = function() {
+//   selectedColor = "#AF00B8";
+// }
+// document.querySelector("#black_knopka").onclick = function() {
+//   selectedColor = "#000";
+// }
+//
+// function draw(e) {
+// var x = e.offsetX;
+// var y = e.offsetY;
+//
+//
+// console.log(e);
+// gc.strokeStyle = selectedColor;
+// gc.lineWidth = 2;
+// if(e.buttons == 1) {
+//   drawLine(prevX, prevY, x, y);
+//   drawLine(600 - prevX, 600 - prevY, 600 - x, 600 - y);
+//   drawLine(600 - prevX, prevY, 600 - x, y);
+//   drawLine(prevX, 600 - prevY, x, 600 - y);
+//   drawLine(prevY, prevX, y, x);
+//   drawLine(600 - prevY, 600 - prevX, 600 - y, 600 - x);
+//   drawLine(600 - prevY, prevX, 600 - y, x);
+//   drawLine(prevY, 600 - prevX, y, 600 - x);
+// }
+// prevX = x;
+// prevY = y;
+// }
+//
+// function drawLine(x1, y1, x2, y2) {
+// gc.beginPath();
+// gc.moveTo(x1, y1);
+// gc.lineTo(x2, y2);
+// gc.stroke();
+// }
+//
 // $(window).resize(() => {
 //   console.log('resize');
 //
 //   windowWidth = window.innerWidth
 //
-//   if (windowWidth < 800) {
-//     canvas.width = 600
-//     canvas.height = 600
+//   if (windowWidth > 800) {
+//     canvas.width = 300
+//     canvas.height = 300
 //   }
+// })
 
+let prevX, prevY, x1, y1;
 
-function load(e) {
-document.getElementById("reset").addEventListener("click", load);
+$(document).ready(function() {
+  let gameCanvas, gc, prevX, prevY;
+  let selectedColor = "#AF00B8"
 
-gameCanvas = document.getElementById("drawCanvas");
-gc = gameCanvas.getContext("2d");
+  let windowWidth = window.innerWidth
+  let ww = 300
 
-gameCanvas.addEventListener("mousemove", draw);
+  let canvas = document.getElementsByTagName('canvas')[0];
+  canvas.width  = 600;
+  canvas.height = 600;
 
-gc.fillStyle = "white";
-gc.fillRect(0, 0, 600, 600);
-}
+  // canvas.top = 10%;
+  // canvas.left = 10%;
 
-sin_knopka.onclick = function() {
-  selectedColor = "#2400FF";
-}
-
-document.querySelector("#sin_knopka").onclick = function() {
-  selectedColor = "#2400FF";
-}
-document.querySelector("#viol_knopka").onclick = function() {
-  selectedColor = "#AF00B8";
-}
-document.querySelector("#black_knopka").onclick = function() {
-  selectedColor = "#000";
-}
-
-function draw(e) {
-var x = e.offsetX;
-var y = e.offsetY;
-
-
-console.log(e);
-gc.strokeStyle = selectedColor;
-gc.lineWidth = 2;
-if(e.buttons == 1) {
-  drawLine(prevX, prevY, x, y);
-  drawLine(600 - prevX, 600 - prevY, 600 - x, 600 - y);
-  drawLine(600 - prevX, prevY, 600 - x, y);
-  drawLine(prevX, 600 - prevY, x, 600 - y);
-  drawLine(prevY, prevX, y, x);
-  drawLine(600 - prevY, 600 - prevX, 600 - y, 600 - x);
-  drawLine(600 - prevY, prevX, 600 - y, x);
-  drawLine(prevY, 600 - prevX, y, 600 - x);
-}
-prevX = x;
-prevY = y;
-}
-
-function drawLine(x1, y1, x2, y2) {
-gc.beginPath();
-gc.moveTo(x1, y1);
-gc.lineTo(x2, y2);
-gc.stroke();
-}
-
-$(window).resize(() => {
-  console.log('resize');
-
-  windowWidth = window.innerWidth
-
-  if (windowWidth > 800) {
-    canvas.width = 300
-    canvas.height = 300
+  if (windowWidth > 1440) {
+    canvas.width = 800;
+    canvas.height = 800;
+    ww = 800
   }
+  else if (windowWidth == 1440) {
+    canvas.width = 640
+    canvas.height = 640
+    ww = 640
+  }
+  else if (windowWidth >= 1280 && windowWidth < 1440) {
+    canvas.width = 600
+    canvas.height = 600
+    ww = 600
+  }
+
+  // if (windowWidth <= 800) {
+  //   canvas.width = 300
+  //   canvas.height = 300
+  // }
+
+  // let canvas_size = ceil(windowWidth * 0.48)
+  // canvas.width = canvas_size
+  // canvas.height = canvas_size
+
+
+
+
+  addEventListener("load", load);
+
+  function load(e) {
+  document.getElementById("reset").addEventListener("click", load);
+
+  gameCanvas = document.getElementById("drawCanvas");
+  gc = gameCanvas.getContext("2d");
+
+  gameCanvas.addEventListener("mousemove", draw);
+
+  gc.fillStyle = "white";
+  gc.fillRect(0, 0, 600, 600);
+  }
+
+  function draw(e) {
+  var x = e.offsetX
+  var y = e.offsetY
+
+  console.log(e);
+
+  $('#sin_knopka').click(function () {
+    selectedColor = "#2400FF";
+  });
+  $('#black_knopka').click(function () {
+    selectedColor = "#000000";
+  });
+  $('#viol_knopka').click(function () {
+    selectedColor = "#AF00B8";
+  });
+
+
+  gc.strokeStyle = "#000";
+  gc.lineWidth = 2;
+  if(e.buttons == 1) {
+    drawLine(prevX, prevY, x, y);
+    drawLine(600 - prevX, 600 - prevY, 600 - x, 600 - y);
+    drawLine(600 - prevX, prevY, 600 - x, y);
+    drawLine(prevX, 600 - prevY, x, 600 - y);
+    drawLine(prevY, prevX, y, x);
+    drawLine(600 - prevY, 600 - prevX, 600 - y, 600 - x);
+    drawLine(600 - prevY, prevX, 600 - y, x);
+    drawLine(prevY, 600 - prevX, y, 600 - x);
+  }
+  prevX = x;
+  prevY = y;
+  }
+
+  function drawLine(x1, y1, x2, y2) {
+  gc.beginPath();
+  gc.moveTo(x1, y1);
+  gc.lineTo(x2, y2);
+  gc.stroke();
+  }
+
+  //
+  // $(window).resize(() => {
+  //   console.log('resize');
+  //
+  //   windowWidth = window.innerWidth
+  //
+  //   if (windowWidth > 800) {
+  //     canvas.width = 300
+  //     canvas.height = 300
+  //   }
+  // })
 })

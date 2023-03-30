@@ -6,11 +6,27 @@
     <style media="screen">
       @font-face {
         font-family: GraphikLCG;
-        src: url("fonts/GraphikLCG-Medium.otf");
+        src: url('fonts/GraphikLCG-Medium.otf');
       }
+
+      @font-face {
+        font-family: Playfair;
+        src: url('fonts/PlayfairDisplay-SemiBoldItalic.ttf');
+      }
+      p {
+        font-family: GraphikLCG;
+      }
+      h5 {
+        font-family: 'Playfair Display', serif;
+      }
+
     </style>
 
+
+
     <link href="stylesheets/style.css" rel="stylesheet">
+    <!-- самая важная строчка в твоей жизни!! не забудь ее в следующий раз -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/x-icon" href="img/bg.png">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
@@ -33,7 +49,6 @@
           $(".screen_2").css("display", "none")
           $(".screen_1").css("display", "none")
           $(".screen_4").css("display", "none")
-          $(".screen_5").css("display", "none")
         });
 
         $(".item2").click(function() {
@@ -41,7 +56,6 @@
           $(".screen_1").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
-          $(".screen_5").css("display", "none")
         });
 
         $(".item3").click(function() {
@@ -49,15 +63,6 @@
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_1").css("display", "none")
-          $(".screen_5").css("display", "none")
-        });
-
-        $(".item4").click(function() {
-          $(".screen_5").css("display", "block")
-          $(".screen_2").css("display", "none")
-          $(".screen_3").css("display", "none")
-          $(".screen_1").css("display", "none")
-          $(".screen_4").css("display", "none")
         });
 
         // кнопки возвращения на главный экран
@@ -67,21 +72,18 @@
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
-          $(".screen_5").css("display", "none")
         });
         $("#home").click(function() {
           $(".screen_1").css("display", "block")
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
-          $(".screen_5").css("display", "none")
         });
         $("#home_track").click(function() {
           $(".screen_1").css("display", "block")
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
-          $(".screen_5").css("display", "none")
         });
 
         $("#home_remember").click(function() {
@@ -89,7 +91,18 @@
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
           $(".screen_4").css("display", "none")
-          $(".screen_5").css("display", "none")
+        });
+
+        let selectedColor = "#2400FF";
+
+        $("#sin_knopka").click(function() {
+          selectedColor = "#2400FF";
+        });
+        $("#viol_knopka").click(function() {
+          selectedColor = "#AF00B8";
+        });
+        $("#black_knopka").click(function() {
+          selectedColor = "#000000";
         });
       });
     </script>
@@ -97,14 +110,11 @@
   <body>
     <!-- главный экран -->
     <div class="screen_1">
-      <div class="back">
-        <img src="img/bg-peretask.png" alt="">
-      </div>
+      <div class="back_1"></div>
 
-      <div class="glitchi">
-        <img src="img/verh_glavniy.png" alt="">
-        <img src="img/niz_glavniy.png" alt="">
-      </div>
+      <div class="glitchi_main"></div>
+      <div class="glitchi_main2"></div>
+
 
       <div class="products">
 
@@ -116,23 +126,16 @@
 
         <div class="item3"></div>
         <div class="ticket3"></div>
-
-        <div class="item4"></div>
-        <div class="ticket4"></div>
       </div>
     </div>
 
-
     <!-- игра перетаскивание экран -->
     <div class="screen_2">
-      <div class="back">
-        <img src="img/bg-peretask.png" alt="">
-      </div>
+      <div class="back_2"></div>
 
-      <div class="glitchi">
-        <img src="img/verh.png" alt="">
-        <img src="img/niz.png" alt="">
-      </div>
+      <div class="glitchi_drag"></div>
+      <div class="glitchi_drag2"></div>
+
 
       <div id="plashka"></div>
       <div class="name">
@@ -256,14 +259,10 @@
 
     <!-- игра рисовашка экран -->
     <div class="screen_3">
-      <div class="back">
-        <img src="img/bg_2.png" alt="">
-      </div>
+      <div class="back_3"></div>
 
-      <div class="glitchi">
-        <img src="img/gli_orange_niz.png">
-        <img src="img/gli_orange_verh.png">
-      </div>
+      <div class="glitchi_draw"></div>
+      <div class="glitchi_draw2"></div>
 
       <div id="kover"></div>
       <div class="name_2">
@@ -287,16 +286,12 @@
 
     <!-- игра следы едой экран -->
     <div class="screen_4">
-      <div class="back">
-        <img src="img/bg_track.png" alt="">
-      </div>
+      <div class="back_4"></div>
 
       <div class="verh_track">
-        <img src="img/verh_track.png" alt="">
       </div>
 
       <div class="niz_track">
-        <img src="img/niz_track.png" alt="">
       </div>
 
       <div class="plashka2"></div>
@@ -310,44 +305,6 @@
       <div class="rectangle_3"></div>
 
       <div id="home_track"></div>
-    </div>
-
-    <!-- игра-запоминайка -->
-    <div class="screen_5">
-      <div class="back">
-        <img src="img/remember_back.png" alt="">
-      </div>
-
-      <div class="verh_track">
-        <img src="img/remember_verh.png" alt="">
-      </div>
-
-      <div class="niz_track">
-        <img src="img/remember_niz.png" alt="">
-      </div>
-
-      <div class="cards">
-        <div class="card1"></div>
-        <div class="card2"></div>
-        <div class="card3"></div>
-        <div class="card4"></div>
-        <div class="card5"></div>
-        <div class="card6"></div>
-        <div class="card7"></div>
-        <div class="card8"></div>
-        <div class="card9"></div>
-        <div class="card10"></div>
-        <div class="card11"></div>
-        <div class="card12"></div>
-        <div class="card13"></div>
-        <div class="card14"></div>
-        <div class="card15"></div>
-        <div class="card16"></div>
-        <div class="card17"></div>
-        <div class="card18"></div>
-      </div>
-
-      <div id="home_remember"></div>
     </div>
 
   </body>

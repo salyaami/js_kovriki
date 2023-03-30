@@ -1,7 +1,34 @@
+/* @media screen and (min-width: 1420px) and (max-width: 1920px) {
+  /* .glitchi_main {
+    height: 5vw;
+  }
+  .glitchi_main2 {
+    height: 5vw;
+  }
+
+  .glitchi_draw {
+    height: 5vw;
+  }
+  .glitchi_draw2 {
+    height: 5vw;
+  }
+
+  .glitchi_drag {
+    height: 5vw;
+  }
+  .glitchi_drag2 {
+    height: 5vw;
+
+} */
+
+
+
 /* ноут 1280 который */
 
 /* игра перетаскивание */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* главный экран */
+
   .polki {
     width: 18vw;
     height: 3.5vh;
@@ -80,49 +107,40 @@
   .item1 {
     top: 29vh;
     left: 2vw;
-    height: 31.2vw;
-    width: 24vw;
+    height: 42.2vw;
+    width: 32vw;
   }
 
   .ticket1 {
-    width: 14vw;
-    height: 14vw;
+    width: 24vw;
+    height: 21vw;
     top: 21vh;
-    left: -8vw;
+    left: -13vw;
   }
 
   .item2 {
-    height: 23.5vw;
-    width: 29.3vw;
+    height: 30.5vw;
+    width: 38.3vw;
     top: 58vh;
+    left: 41vw;
   }
   .ticket2 {
-    top: 57vh;
-    left: 21vw;
-    height: 15vw;
-    width: 14vw;
+    top: 64vh;
+    left: 27vw;
+    height: 25vw;
+    width: 21vw;
   }
   .item3 {
     top: 21vh;
-    left: 54vw;
-    height: 27vw;
-    width: 44vw;
+    left: 53vw;
+    height: 33vw;
+    width: 50vw;
   }
   .ticket3 {
     top: 20vh;
-    left: 94vw;
-    height: 10vw;
-    width: 14vw;
-  }
-  .item4 {
-    height: 35vw;
-    width: 38vw;
-  }
-  .ticket4 {
-    top: 58vh;
-    left: 79vw;
-    height: 17vw;
-    width: 20vw;
+    left: 100vw;
+    height: 16vw;
+    width: 22vw;
   }
 
 
@@ -312,6 +330,52 @@
 
 /* мобилки */
 @media screen and (min-width: 340px) and (max-width: 650px) {
+
+  .item1 {
+    top: 29vh;
+    left: 2vw;
+    height: 54.2vw;
+    width: 41vw;
+  }
+  .ticket1 {
+    width: 29vw;
+    height: 27vw;
+    top: 25vh;
+    left: -16vw;
+  }
+  .item2 {
+    height: 39.5vw;
+    width: 49.3vw;
+    top: 70vh;
+  }
+  .ticket2 {
+    top: 73vh;
+    left: 12vw;
+    height: 31vw;
+    width: 28vw;
+  }
+  .item3 {
+    top: 13vh;
+    left: 54vw;
+    height: 40vw;
+    width: 59vw;
+  }
+  .ticket3 {
+    top: 11vh;
+    left: 107vw;
+    height: 22vw;
+    width: 29vw;
+  }
+  .item4 {
+    height: 72.4vw;
+    width: 79vw;
+  }
+  .ticket4 {
+    top: 55vh;
+    left: 73vw;
+    height: 26vw;
+    width: 34vw;
+  }
 
   /* изменения в трэке */
   .plashka2{
