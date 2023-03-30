@@ -11,13 +11,14 @@
 
       @font-face {
         font-family: Playfair Display;
-        src: url('fonts/PlayfairDisplay-SemiBoldItalic.ttf');
+        src: url('fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
       }
       p {
         font-family: GraphikLCG;
       }
       h5 {
         font-family: Playfair Display;
+        font-weight: 600;
       }
     </style>
 
@@ -35,7 +36,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/draganddrop.js"></script>
-    <script src="js/ddraw.js"></script>
+    <!-- <script src="js/draw2.js"></script> -->
+    <script src="js/draw.js"></script>
     <script src="js/track.js"></script>
 
 
@@ -85,10 +87,10 @@
           $(".screen_1").css("display", "none")
         });
 
-        $("help").click(function() {
+        $(".help").click(function() {
           $(".screen_help").css("display", "block")
         });
-        $("help_close").click(function() {
+        $(".close").click(function() {
           $(".screen_help").css("display", "none")
         });
         // кнопки возвращения на главный экран
@@ -106,13 +108,6 @@
           $(".screen_4").css("display", "none")
         });
         $("#home_track").click(function() {
-          $(".screen_1").css("display", "block")
-          $(".screen_2").css("display", "none")
-          $(".screen_3").css("display", "none")
-          $(".screen_4").css("display", "none")
-        });
-
-        $("#home_remember").click(function() {
           $(".screen_1").css("display", "block")
           $(".screen_2").css("display", "none")
           $(".screen_3").css("display", "none")
@@ -181,8 +176,12 @@
 
     <!-- экран с подсказками по кнопке помоць -->
     <div class="screen_help">
+      <div class="blur"></div>
       <div class="help_rect"></div>
-      <div class="help_close"></div>
+      <div class="close"></div>
+      <div class="straww"></div>
+      <div class="lemm"></div>
+      <div class="brocc"></div>
     </div>
 
     <!-- игра перетаскивание экран -->

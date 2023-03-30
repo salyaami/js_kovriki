@@ -22,7 +22,7 @@ body {
 }
 
 .screen_help {
-  display: none;
+  display: block;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
@@ -105,74 +105,12 @@ body {
 
 .help {
   position: absolute;
-  top: 86vh;
+  top: 93vh;
   right: 3vw;
-  height: 7vw;
-  width: 13vw;
-  z-index: 2;
+  height: 5vw;
+  width: 11vw;
   background-size: cover;
   background-image: url("../img/help.png");
-}
-
-.blur {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-color: #7B5AFD;
-  opacity: .6;
-}
-
-.help_rect {
-  position: absolute;
-  top: 19vh;
-  left: 28vw;
-  height: 27.5vw;
-  width: 44vw;
-  background-size: cover;
-  background-image: url("../img/help_plashka.png");
-}
-
-.close {
-  position: absolute;
-  top: 20vh;
-  left: 66vw;
-  height: 5vw;
-  width: 5vw;
-}
-.straww {
-  position: absolute;
-  left: 53vw;
-  top: 8vw;
-  display: flex;
-  width: 10vw;
-  height: 10vw;
-  background-size: cover;
-  z-index: 3;
-  background-image: url("../img/straw.png");
-}
-
-.lemm {
-  position: absolute;
-  left: 27vw;
-  top: 66.5vh;
-  z-index: 3;
-  width: 7vw;
-  height: 7vw;
-  background-size: cover;
-  background-image: url("../img/lemon.png");
-}
-.brocc {
-  position: absolute;
-  left: 64vw;
-  top: 55vh;
-  z-index: 3;
-  width: 12vw;
-  height: 12vw;
-  background-size: cover;
-  background-image: url("../img/brocco.png");
 }
 
 
@@ -452,6 +390,7 @@ body {
   position: absolute;
   left: 77vw;
   top: 3.5vh;
+  cursor: move;
   position: absolute;
   display: flex;
   width: 10vw;
@@ -464,6 +403,7 @@ body {
   position: absolute;
   left: 87vw;
   top: 5.5vh;
+  cursor: move;
   position: absolute;
   width: 7vw;
   height: 7vw;
@@ -756,10 +696,12 @@ body {
 
   display: block;
   margin: auto; */
+  background: #fff;
   display: block;
   position: absolute;
   top: 13vh;
-  left: 29vw;
+  left: 50%;
+  transform: translateX(-50%);
   margin-left: auto;
   margin-right: auto;
 }
