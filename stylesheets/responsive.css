@@ -8,7 +8,19 @@
 
 /* игра перетаскивание */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+
   /* главный экран */
+  .help_rect {
+    position: absolute;
+    top: 19vh;
+    left: 20vw;
+    height: 39.5vw;
+    width: 60vw;
+  }
+  .help {
+    top: 89vh;
+  }
 
   .polki {
     width: 18vw;
@@ -87,6 +99,22 @@
 
   /* главный экран */
 
+  .help_rect {
+    position: absolute;
+    top: 19vh;
+    left: 20vw;
+    height: 39.5vw;
+    width: 60vw;
+  }
+  .help {
+    top: 90vh;
+  }
+  .close {
+    top: 24vh;
+    left: 70vw;
+    height: 7vw;
+    width: 7vw;
+  }
 
   .item1 {
     top: 17vh;
@@ -358,6 +386,27 @@
 @media screen and (min-width: 340px) and (max-width: 650px) {
 
   /* изменения полей */
+
+  .help_rect {
+    top: 19vh;
+    left: 7vw;
+    height: 55.5vw;
+    width: 86vw;
+  }
+  .help {
+    top: 90vh;
+    right: 3vw;
+    height: 12vw;
+    width: 25vw;
+  }
+  .close {
+    position: absolute;
+    top: 24vh;
+    left: 80vw;
+    height: 7vw;
+    width: 7vw;
+  }
+
 
   .glitchi_main {
     height: 10vw;
