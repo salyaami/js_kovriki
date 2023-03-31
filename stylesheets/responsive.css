@@ -328,8 +328,8 @@
     left: calc((100vw - 540px)/2);
 }
   #kover{
-    left: 16vw;
-    width: 70vw;
+    left: 15vw;
+    width: 71vw;
     top: 6vh;
     height: 5vh;
   }
@@ -342,7 +342,7 @@
 
   .name_2 p:nth-child(1) {
     font-size: 4vw;
-    left: 18vw;
+    left: 17vw;
     top: 7vh;
   }
   .name_2 p:nth-child(3) {
