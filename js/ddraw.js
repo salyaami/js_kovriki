@@ -44,15 +44,15 @@
 //   selectedColor = "#2400FF";
 // }
 //
-// document.querySelector("#sin_knopka").onclick = function() {
-//   selectedColor = "#2400FF";
-// }
-// document.querySelector("#viol_knopka").onclick = function() {
-//   selectedColor = "#AF00B8";
-// }
-// document.querySelector("#black_knopka").onclick = function() {
-//   selectedColor = "#000";
-// }
+document.querySelector("#sin_knopka").onclick = function() {
+  selectedColor = "#2400FF";
+}
+document.querySelector("#viol_knopka").onclick = function() {
+  selectedColor = "#AF00B8";
+}
+document.querySelector("#black_knopka").onclick = function() {
+  selectedColor = "#000";
+}
 //
 // function draw(e) {
 // var x = e.offsetX;
@@ -176,13 +176,13 @@ $(document).ready(function() {
   console.log(e);
 
   $('#sin_knopka').click(function () {
-    selectedColor = "#2400FF";
+    gc.strokeStyle = "#2400FF";
   });
   $('#black_knopka').click(function () {
-    selectedColor = "#000000";
+    gc.strokeStyle = "#000000";
   });
   $('#viol_knopka').click(function () {
-    selectedColor = "#AF00B8";
+    gc.strokeStyle = "#AF00B8";
   });
 
 

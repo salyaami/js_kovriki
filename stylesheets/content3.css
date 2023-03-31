@@ -687,15 +687,7 @@ body {
   display: flex;
 }
 
-#drawCanvas {
-  /* position: absolute;
-  top: 13vh;
-  left: 31vw;
-  height: 38vw;
-  /* width: 38vw;
-
-  display: block;
-  margin: auto; */
+#drawCanvas {  
   background: #fff;
   display: block;
   position: absolute;

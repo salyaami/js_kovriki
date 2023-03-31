@@ -34,8 +34,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/draganddrop.js"></script>
-    <!-- <script src="js/draw2.js"></script> -->
-    <script src="js/draw.js"></script>
+    <script src="js/canvas.js"></script>
+    <!-- <script src="js/draw.js"></script> -->
     <script src="js/track.js"></script>
 
 
@@ -112,23 +112,6 @@
           $(".screen_4").css("display", "none")
         });
 
-        let selectedColor = "#2400FF";
-
-        $("#sin_knopka").click(function() {
-          selectedColor = "#2400FF";
-        });
-        $("#viol_knopka").click(function() {
-          selectedColor = "#AF00B8";
-        });
-        $("#black_knopka").click(function() {
-          selectedColor = "#000000";
-        });
-
-        $(".item1").hover(function(){
-          $(".cursor").addClass("cursorLabelClickAndMove");
-        },function(){
-          $(".cursorLabel").removeClass("cursorLabelClickAndMove");
-        });
       });
     </script>
   </head>
@@ -173,14 +156,21 @@
       <div class="blur"></div>
       <div class="help_rect"></div>
       <div class="close"></div>
-      <div class="straww"></div>
       <div class="textik">
         <p>Привет, мой дорогой друг!</p>
         <p>Ты попал в царство отдыха,</p>
         <p>еды и развлечений! Ты этого заслужил,</p>
+        <p>ведь ты трудился много и очень</p>
+        <p>плодотворно! Садись поудобнее,</p>
+        <p>у нас на сайте ты сможешь нарисовать</p>
+        <p>идеальный симметричный ковёр</p>
+        <p>(как ты всегда старался), собрать</p>
+        <p>все продукты «в дом» и разложить</p>
+        <p>любимую еду на ковёр, составив самый</p>
+        <p>вкусный и красивый экземляр!</p>
+        <p>Будь упитанным, но воспитанным!</p>
+        <p>Всегда убирай за собой!</p>
       </div>
-      <div class="lemm"></div>
-      <div class="brocc"></div>
     </div>
 
     <!-- игра перетаскивание экран -->
@@ -323,10 +313,6 @@
         <h5>свой уникальный</h5>
         <p>ковер</p>
       </div>
-
-      <div id="sin_knopka"></div>
-      <div id="black_knopka"></div>
-      <div id="viol_knopka"></div>
 
       <div id="revers_knopka"></div>
 

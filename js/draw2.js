@@ -8,24 +8,12 @@ $(document).ready(function() {
   let windowWidth = window.innerWidth
 
   if (windowWidth > 800) {
-    canvas.width = 800
-    canvas.height = 800
+    canvas.width = 600
+    canvas.height = 600
   }
 
-  // let drawing = (e) => {
-  //   console.log(e);
-  //   ctx.lineTo(e.offsetX, e.offsetY);
-  //   // const canvasPosition = canvas.getBoundingClientRect()
-  //   // const canvasTop = canvasPosition.top
-  //   // const canvasLeft = canvasPosition.left
-  //
-  //   // ctx.lineTo(e.clientX - canvasLeft, e.clientY - canvasTop);
-  //   ctx.stroke();
-  // }
     ctx.strokeStyle = "#AF00B8";
-  // $('#black_knopka').click(function() {
-  //   ctx.strokeStyle = "black";
-  // });
+
     ctx.lineWidth = 3;
   canvas.addEventListener("mousemove", drawing);
 
@@ -33,18 +21,28 @@ $(document).ready(function() {
     let x = e.offsetX;
     let y = e.offsetY;
 
+    document.querySelector("#sin_knopka").onclick = function() {
+      selectedColor = "#2400FF";
+    }
+    document.querySelector("#viol_knopka").onclick = function() {
+      selectedColor = "#AF00B8";
+    }
+    document.querySelector("#black_knopka").onclick = function() {
+      selectedColor = "#000";
+    }
+
     console.log(e);
     ctx.strokeStyle = "#AF00B8";
     ctx.lineWidth = 4;
     if(e.buttons == 1) {
       drawLine(prevX, prevY, x, y);
-      drawLine(800 - prevX, 800 - prevY, 800 - x, 800 - y);
-      drawLine(800 - prevX, prevY, 800 - x, y);
-      drawLine(prevX, 800 - prevY, x, 800 - y);
+      drawLine(600 - prevX, 600 - prevY, 600 - x, 600 - y);
+      drawLine(600 - prevX, prevY, 600 - x, y);
+      drawLine(prevX, 600 - prevY, x, 600 - y);
       drawLine(prevY, prevX, y, x);
-      drawLine(800 - prevY, 800 - prevX, 800 - y, 800 - x);
-      drawLine(800 - prevY, prevX, 800 - y, x);
-      drawLine(prevY, 800 - prevX, y, 800 - x);
+      drawLine(600 - prevY, 600 - prevX, 600 - y, 600 - x);
+      drawLine(600 - prevY, prevX, 600 - y, x);
+      drawLine(prevY, 600 - prevX, y, 600 - x);
     }
     prevX = x;
     prevY = y;
@@ -58,9 +56,6 @@ $(document).ready(function() {
    ctx.stroke();
   }
 
-
-
-
   $(window).resize(() => {
     console.log('resize');
 
@@ -72,16 +67,3 @@ $(document).ready(function() {
     }
   })
 });
-
-//
-// function drawLine(x1, y1, x2, y2) {
-//   ctx.beginPath();
-//   ctx.moveTo(x1, y1);
-//   ctx.lineTo(x2, y2);
-//   ctx.stroke();
-// }
-
-// $("#viol_knopka").click(function() {
-//   selectedColor = window.getComputedStyle(btn).getPropertyValue('background-color');
-//   // btn????
-// });

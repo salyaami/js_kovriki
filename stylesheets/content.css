@@ -119,6 +119,19 @@ body {
   background-image: url("../img/help.png");
 }
 
+.textik {
+  line-height: 0.8;
+  position: absolute;
+  top: 29.5vh;
+  left: 31vw;
+  font-family: GraphikLCG;
+  color: #fff;
+}
+
+.textik p:nth-child(1), .textik p:nth-child(13) {
+  line-height: 2;
+}
+
 .blur {
   position: absolute;
   left: 0;
@@ -670,43 +683,6 @@ body {
 
 /* кнопки */
 
-#sin_knopka {
-  background: #2400FF;
-  position: absolute;
-  width: 4vw;
-  height: 4vw;
-  left: 75vw;
-  top: 30vh;
-  transform: rotate(45deg);
-  display: flex;
-  border: 3px solid #ffffff;
-}
-
-#black_knopka {
-  background: #000;
-  position: absolute;
-  width: 4vw;
-  height: 4vw;
-  left: 75vw;
-  top: 43vh;
-  transform: rotate(45deg);
-  display: flex;
-  border: 3px solid #ffffff;
-}
-
-#viol_knopka {
-  background: #AF00B8;
-  position: absolute;
-  width: 4vw;
-  height: 4vw;
-  left: 75vw;
-  top: 56vh;
-  transform: rotate(45deg);
-  display: flex;
-  border: 3px solid #ffffff;
-}
-
-
 #home_knopka {
   position: absolute;
   left: 10vw;
@@ -720,14 +696,6 @@ body {
 }
 
 #drawCanvas {
-  /* position: absolute;
-  top: 13vh;
-  left: 31vw;
-  height: 38vw;
-  /* width: 38vw;
-
-  display: block;
-  margin: auto; */
   display: block;
   position: absolute;
   top: 13vh;
@@ -830,7 +798,7 @@ body {
   background-image: url("../img/home_track.png");
   background-size: cover;
 }
-.home_track:hover, #home_knopka:hover, #sin_knopka:hover, #black_knopka:hover, #viol_knopka:hover, #home_track:hover, #home_remember:hover {
+.home_track:hover, #home_knopka:hover, #home_track:hover, #home_remember:hover {
   box-shadow: 10px 16px 40px 0px #FFFFFFBD;
   transition: 0.5s;
 }

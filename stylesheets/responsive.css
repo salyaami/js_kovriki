@@ -21,7 +21,12 @@
   .help {
     top: 89vh;
   }
-
+  .close {
+    top: 27vh;
+    left: 72vw;
+    height: 5vw;
+    width: 5vw;
+  }
   .polki {
     width: 18vw;
     height: 3.5vh;
@@ -55,42 +60,20 @@
   }
   .carrot {top: 79vh;
   }
-  .name p:nth-child(1) {
-    font-size: 3vw;
-    top: 9vh;
-    left: 11.5vw;
-  }
-  .name h5 {
-    font-size: 3vw;
-    top: 8.7vh;
-    left: 24vw;
-  }
-  .name p:nth-child(3) {
-    font-size: 3vw;
-    top: 9vh;
-    left: 49.5vw;
-  }
+
   /* рисование игра */
-  /* #canvas {
-    top: 15vh;
-    left: 25vw;
-    height: 50vw;
-    width: 50vw;
-  } */
+
   #home_knopka {
-    top: 15vh;
+    top: 13vh;
+    width: 14vw;
+    height: 6vw;
+    left: 6vw;
   }
-  #sin_knopka {
-    left: 79vw;
-    top: 33vh;
-  }
-  #black_knopka {
-    left: 79vw;
-    top: 46vh;
-  }
-  #viol_knopka {
-    left: 79vw;
-    top: 59vh;
+
+  #drawCanvas {
+    top: 13vh;
+    left: 25vw;
+    left: calc((100vw - 560px)/2);
   }
 }
 
@@ -141,14 +124,14 @@
     width: 16vw;
   }
   .item3 {
-    top: 11vh;
-    left: 32vw;
+    top: 8vh;
+    left: 27vw;
     height: 24vw;
     width: 40vw;
   }
   .ticket3 {
-    top: 13vh;
-    left: 68vw;
+    top: 12vh;
+    left: 64vw;
     height: 10vw;
     width: 13vw;
   }
@@ -264,20 +247,21 @@
     left: 76vw;
   }
   .name p:nth-child(1) {
-    font-size: 4vw;
+    font-size: 3vw;
     top: 9vh;
-    left: 4.5vw;
+    left: 11.5vw;
   }
   .name h5 {
-    font-size: 4vw;
+    font-size: 3vw;
     top: 8.7vh;
-    left: 21vw;
+    left: 24vw;
   }
   .name p:nth-child(3) {
-    font-size: 4vw;
+    font-size: 3vw;
     top: 9vh;
-    left: 55.5vw;
+    left: 49.5vw;
   }
+
   #pink_knopka {
     width: 4vw;
     height: 4vw;
@@ -334,50 +318,40 @@
     height: 8vw;
   }
 
+  /* рисование игра 651-1024*/
 
-  /* рисование игра */
 
+  #drawCanvas{
+    display: block;
+    position: absolute;
+    top: 18vh;
+    left: calc((100vw - 540px)/2);
+}
   #kover{
-    left: 14vw;
+    left: 19vw;
     width: 66vw;
+    top: 6vh;
   }
   #home_knopka {
-    top: 15vh;
-    left: 2vw;
+    top: 8vh;
+    left: 4vw;
     width: 13vw;
     height: 6vw;
   }
-  #sin_knopka {
-    left: 83vw;
-    top: 33vh;
-    height: 5vw;
-    width: 5vw;
-  }
-  #black_knopka {
-    left: 83vw;
-    top: 46vh;
-    height: 5vw;
-    width: 5vw;
-  }
-  #viol_knopka {
-    left: 83vw;
-    top: 59vh;
-    height: 5vw;
-    width: 5vw;
-  }
+
   .name_2 p:nth-child(1) {
     font-size: 4vw;
-    left: 15vw;
-    top: 5vh;
+    left: 20vw;
+    top: 7vh;
   }
   .name_2 p:nth-child(3) {
     font-size: 4vw;
-    top: 5vh;
-    left: 67vw;
+    top: 7vh;
+    left: 72vw;
   }
   .name_2 h5 {
-    top: 4.5vh;
-    left: 33vw;
+    top: 6.5vh;
+    left: 38vw;
     font-size: 4vw;
   }
 }
@@ -400,7 +374,6 @@
     width: 25vw;
   }
   .close {
-    position: absolute;
     top: 24vh;
     left: 80vw;
     height: 7vw;
@@ -557,6 +530,21 @@
     height: 5vh;
     left: 3vw;
   }
+  .name p:nth-child(1) {
+    font-size: 4vw;
+    top: 9vh;
+    left: 4.5vw;
+  }
+  .name h5 {
+    font-size: 4vw;
+    top: 8.7vh;
+    left: 21vw;
+  }
+  .name p:nth-child(3) {
+    font-size: 4vw;
+    top: 9vh;
+    left: 55.5vw;
+  }
   .straw {
     top: 11.5vh;
     width: 17vw;
@@ -619,18 +607,18 @@
   }
   .name p:nth-child(1) {
     font-size: 4vw;
+    left: 5vw;
     top: 9vh;
-    left: 4.5vw;
   }
   .name h5 {
-    font-size: 4vw;
-    top: 8.7vh;
+    top: 8.5vh;
     left: 21vw;
+    font-size: 4vw;
   }
   .name p:nth-child(3) {
     font-size: 4vw;
     top: 9vh;
-    left: 55.5vw;
+    left: 55vw;
   }
   #pink_knopka {
     width: 5.5vw;
@@ -655,54 +643,40 @@
     height: 8vw;
     left: 44vw;
   }
+
   /* рисование игра */
-  /* #canvas {
-    top: 12vh;
-    left: 10vw;
-    height: 78vw;
-    width: 78vw;
-  } */
+
+  #drawCanvas {
+    top: 18vh;
+    left: 25vw;
+    left: calc((100vw - 380px) / 2);
+  }
+
   #kover{
-    left: 14vw;
-    width: 66vw;
+    left: 12vw;
+    width: 77vw;
+    height: 7vh;
   }
   #home_knopka {
-    top: 82vh;
-    left: 10vw;
-    width: 17vw;
-    height: 8vw;
+    top: 80vh;
+    left: 34vw;
+    width: 31vw;
+    height: 14vw;
   }
-  #sin_knopka {
-    left: 57vw;
-    top: 83vh;
-    height: 6vw;
-    width: 6vw;
-  }
-  #black_knopka {
-    left: 69vw;
-    top: 83vh;
-    height: 6vw;
-    width: 6vw;
-  }
-  #viol_knopka {
-    left: 81vw;
-    top: 83vh;
-    height: 6vw;
-    width: 6vw;
-  }
+
   .name_2 p:nth-child(1) {
     font-size: 4vw;
-    left: 15vw;
+    left: 17vw;
     top: 6vh;
   }
   .name_2 p:nth-child(3) {
     font-size: 4vw;
     top: 6vh;
-    left: 67vw;
+    left: 69vw;
   }
   .name_2 h5 {
     top: 5.5vh;
-    left: 33vw;
+    left: 35vw;
     font-size: 4vw;
   }
 
